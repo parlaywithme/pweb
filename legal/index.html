@@ -1,0 +1,62 @@
+---
+layout: page
+title: Legal – Parlay
+current: legal
+---
+
+<div class="thin">
+  <p>
+    Betting is illegal in most states. When you make a "bet" in Parlay, you are not making a bet by the legal definition of the word. Legally, a bet is an agreement in which something of value is at risk. When you sign up for Parlay, you agree that you will not make agreements in the app and that all money transfers are optional. 
+  </p>
+
+  <p>
+    There are a few states (in yellow) in which the only types of bets we allow are those with nothing of value at risk:
+  <p>
+</div>
+
+<div id="map"></div>
+
+<div class="thin">
+  <p>
+    This list is a work in progress. The 50-state survey will be completed prior to launch. 
+  </p>
+</div>
+
+
+
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="/datamaps.usa.min.js"></script>
+
+<script>
+var election = new Datamap({
+    scope: 'usa',
+    element: document.getElementById('map'),
+    geographyConfig: {
+	highlightBorderColor: '#bada55',
+	popupTemplate: function(geography, data) {
+	    return '<div class="hoverinfo">' + geography.properties.name;
+	},
+	highlightBorderWidth: 3
+    },
+    fills: {
+	yellow: '#EDDC4E',
+	defaultFill: '#A9C0DE'
+    },
+    data:{
+	"AR": {
+	    "fillKey": "yellow"
+	},
+	"WA": {
+	    "fillKey": "yellow"
+	},
+	"UT": {
+	    "fillKey": "yellow"
+	},
+	"NV": {
+	    "fillKey": "yellow"
+	}
+    }
+});
+</script>
