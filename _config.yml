@@ -13,4 +13,4 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 
-exclude: [bower_components]
+# exclude: [bower_components]
