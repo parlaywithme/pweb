@@ -147,6 +147,10 @@ nav > a:not(.logo):not(.signin) {
     line-height: 70px;
 }
 
+nav + footer {
+    margin-top: 0;
+}
+
 a.current {
     color: #222222;
 }
