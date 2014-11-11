@@ -281,3 +281,27 @@ svg.iconic {
 #iphone {
     width: 303px;
 }
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.card {
+    background: #BCF5A9;
+    border: 5px solid #BCF5A9;
+    padding: 5px;
+    margin: 15px;
+    color: #424242;
+    position: relative;
+    /* float: left; */
+    width: 25%;
+    height: 150px;
+    line-height: 130%;
+    display: block;
+    -webkit-margin-before: 2em;
+    -webkit-margin-after: 2em;
+    -webkit-margin-start: 2em;
+    -webkit-margin-end: 2em;
+}
