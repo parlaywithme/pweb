@@ -6,15 +6,22 @@ current: fees
 
 <h2>Transfers into/out of Parlay</h2>
 <style>
-table td {
-  padding: 15px;    
+table {
+  width:100%;
 }
-table tr.alt td {
-  color: #000000;
+table td {
+  padding: 15px;
+  border-collapse: collapse;
+  text-align: center;
+}
+table#01 tr:nth-child(even){
+  background-color:#FFFFFF;
+}
+table#01 tr:nth-child(odd){
   background-color: #2EFE2E;
 }
 </style>
-<table>
+<table id="01">
   <tr>
     <td>Bank Account</td>
     <td rowspan="3">Free once a month, then 25&cent fee</td>
