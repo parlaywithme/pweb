@@ -22,17 +22,112 @@ a:active {
     opacity: 0.4;
 }
 
+a.current {
+    color: #222222;
+}
+
+a.current:hover {
+    opacity: 1;
+}
+
 /* PAGE STYLES in order of appearance */
+
+/* header */
 
 header {
     width: 100%;
     position: fixed;
-    background-color: white;
+    /*background-color: white;*/
 }
 
 header > a {
     padding: 25px 40px;
 }
+
+/* general navbar */
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+
+    /* removed below - wasn't needed (js) */
+    /*margin-left: 20%;*/
+    /*border-bottom: 1px solid #2ecc40;*/
+    /*display: flex;
+    justify-content: space-around;
+    align-content: space-around;*/
+}
+
+nav a {
+    color: #2ecc40;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    /* removed below - wasn't needed (js) */
+    /*flex-grow: 1;*/
+    /*padding: 20px 0;*/
+    /*font-size: 20px;*/
+    /*line-height: 44px;*/
+}
+
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 500px;
+    height: 40px;
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+header > nav {
+    width: 100%;
+}
+
+nav li a {  
+    box-sizing:border-box;  
+    -moz-box-sizing:border-box;  
+    -webkit-box-sizing:border-box;  
+}  
+
+nav a:not(.logo):not(.signin) {
+    line-height: 40px;
+}
+
+/* specific navbar */
+
+#top_nav {
+    height: 75px;
+}
+
+#bottom_nav {
+    height: 40px;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 50px;
+    margin-top: 80px;
+    display: block;
+}
+
+footer > p {
+    color: #aaaaaa;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+nav + footer {
+    margin-top: 20px;
+}
+
+/* logo */
 
 a.logo {
     position: absolute;
@@ -46,15 +141,11 @@ nav > a.signin
     flex-grow: 2;
 }
 
-nav > a {
-}
-
 h1.logo {
     font-weight: 800;
-    font-size: 30px;
+    font-size: 28px;
     margin: 0;
 }
-
 
 svg.logo {
     width: 30px;
@@ -64,6 +155,8 @@ svg.logo {
 svg.logo * {
     fill: #2ecc40;
 }
+
+/* sign in button */
 
 a.signin {
     position: absolute;
@@ -89,6 +182,8 @@ svg.signin * {
 svg.signin .iconic-property-fill {
     fill: #2ecc40;
 }
+
+/* page content */
 
 main {
     padding-top: 130px;
@@ -121,55 +216,6 @@ h2 {
 
 .download-links > a > img{
     width: 200px;
-}
-
-
-nav {
-    width: 60%;
-    margin-left: 20%;
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-}
-
-header > nav {
-    width: 90%;
-    margin-left: 5%;
-}
-
-nav > a {
-    flex-grow: 1;
-    padding: 20px 0;
-    font-size: 20px;
-    line-height: 44px;
-}
-
-nav > a:not(.logo):not(.signin) {
-    line-height: 70px;
-}
-
-nav + footer {
-    margin-top: 0;
-}
-
-a.current {
-    color: #222222;
-}
-
-a.current:hover {
-    opacity: 1;
-}
-
-footer {
-    width: 100%;
-    height: 50px;
-    margin-top: 80px;
-}
-
-footer > p {
-    color: #aaaaaa;
-    font-weight: 200;
-    font-size: 14px;
 }
 
 table {
@@ -305,3 +351,45 @@ svg.iconic {
     -webkit-margin-start: 2em;
     -webkit-margin-end: 2em;
 }
+
+/* css clearfix hack - for elements to clear each other */
+
+.clearfix:before,  
+.clearfix:after {  
+    content: " ";  
+    display: table;  
+}  
+.clearfix:after {  
+    clear: both;  
+}  
+.clearfix {  
+    *zoom: 1;  
+}  
+
+/* responsive adjustment - anything under max-width will change the bottom navbar to green, vertically-stacked buttons */
+
+@media only screen and (max-width : 500px) {  
+    nav ul {  
+        width: 100%;  
+        display: block;  
+        height: auto;
+    }
+
+    #bottom_nav li {  
+        display: block;  
+        width: 100%;
+        background-color: #2ecc40;
+        border-bottom: 1px solid white;  
+        border-top: 1px solid white;  
+    }  
+
+    #bottom_nav a {
+        color: white;
+    }
+
+    /* space for footer */
+
+    #bottom_nav li:last-child {
+        margin-bottom: 10px;
+    }
+}  
