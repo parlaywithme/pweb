@@ -12,6 +12,12 @@ body {
     height: 100%;
 }
 
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
 a {
     color: #2ecc40;
     text-decoration: none;
@@ -30,14 +36,16 @@ a.current:hover {
     opacity: 1;
 }
 
-/* PAGE STYLES in order of appearance */
-
 /* header */
 
 header {
     width: 100%;
     position: fixed;
-    /*background-color: white;*/
+    top: 0;
+}
+
+header.on-top {
+    background-color: white;
 }
 
 header > a {
@@ -47,67 +55,33 @@ header > a {
 /* general navbar */
 
 nav {
-    width: 100%;
-    margin: 0 auto;
-    background-color: white;
-    position: relative;
+    width: 60%;
+    height: 110px;
+    margin-left: 20%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
-    
-    /* removed below - wasn't needed (js) */
-    /*margin-left: 20%;*/
-    /*border-bottom: 1px solid #2ecc40;*/
 }
 
-nav a {
+
+nav > a {
     color: #2ecc40;
-    display: inline-block;
-    width: 100px;
-    text-align: center;
+    /* width: 100px; */
     flex-grow: 1;
-    padding: 0px 0;
     font-size: 20px;
     line-height: 44px;
-}
-
-nav ul {
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    flex-grow: 1;
-}
-
-nav li {
-    display: flex;
-    flex-grow: 1;
+    padding: 20px 0 0;
 }
 
 header > nav {
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
 }
-
-nav li a {  
-    box-sizing:border-box;  
-    -moz-box-sizing:border-box;  
-    -webkit-box-sizing:border-box;  
-}  
 
 nav a:not(.logo):not(.signin) {
-    line-height: 40px;
+    line-height: 70px;
     padding: 20px 0;
-}
-
-/* specific navbar */
-
-#top_nav {
-    height: 80px;
-}
-
-#bottom_nav {
-    width: 60%;
-    height: 110px;
 }
 
 /* footer */
@@ -188,7 +162,11 @@ svg.signin .iconic-property-fill {
 /* page content */
 
 main {
-    padding-top: 130px;
+    padding-top: 200px;
+}
+
+.down {
+    margin-top: 60px;
 }
 
 h1 {
@@ -308,11 +286,11 @@ svg.iconic {
     margin-right: 10px;
 }
 
-.support {
+p.support {
     width: 60%;
     margin-left: 20%;
-    margin-top: 150px;
-    margin-bottom: 30%;
+    margin-top: 10%
+    margin-bottom: 20%;
 }
 
 #map {
@@ -354,43 +332,60 @@ svg.iconic {
     -webkit-margin-end: 2em;
 }
 
-/* css clearfix hack - for elements to clear each other */
+/* responsive adjustment */
 
-.clearfix:before,  
-.clearfix:after {  
-    content: " ";  
-    display: table;  
-}  
-.clearfix:after {  
-    clear: both;  
-}  
-.clearfix {  
-    *zoom: 1;  
-}  
-
-/* responsive adjustment - anything under max-width will change the bottom navbar to green, vertically-stacked buttons */
-
-@media only screen and (max-width : 500px) {  
-
-    #bottom_nav {
-        width: 100%;
-        height: 210px; /*to do - figure out better way for the nav to contain all of the items (210 is height of lis * # of lis)*/
+@media only screen and (max-width : 1280px) {
+    a.logo {
+	left: 10%;
     }
 
-    #bottom_nav ul {
-        display: flex;
-        flex-direction: column;
+    a.signin {
+	right: 10%;
+    }
+}
+
+@media only screen and (max-width : 1100px) {
+    a.logo {
+	left: 0;
     }
 
-    #bottom_nav li {  
+    a.signin {
+	right: 0;
+    }
+}
+
+@media only screen and (max-width : 900px) {
+    header {
+	background-color: white;
+	height: 120px; /* todo why is this needed? */
+    }
+
+    nav {
+	width: 80%;
+	margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width : 580px) {
+    nav {
+	width: 90%;
+	margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width : 450px) {  
+    nav {
+	height: auto;
+    }
+
+    #bottom-nav {
         width: 100%;
-        background-color: #2ecc40;
-        border-bottom: 1px solid white;  
-        border-top: 1px solid white;  
+	margin-left: 0;
+    }
+
+    #bottom-nav > a {  
+        width: 100%;
+	padding: 0;
+	line-height: 50px;
     }  
-
-    #bottom_nav a {
-        color: white;
-        padding: 0;
-    }
 }  
