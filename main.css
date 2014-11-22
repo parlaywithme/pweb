@@ -56,14 +56,13 @@ header > a {
 
 nav {
     width: 60%;
-    height: 110px;
+    /*height: 110px;*/
     margin-left: 20%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
 }
-
 
 nav > a {
     color: #2ecc40;
@@ -366,10 +365,15 @@ p.support {
     }
 }
 
-@media only screen and (max-width : 580px) {
-    nav {
+@media only screen and (max-width : 640px) {
+/*    nav {
 	width: 90%;
 	margin-left: 5%;
+    }*/
+    nav > a {
+        width: 100%;
+        padding: 0;
+        line-height: 50px;
     }
 }
 
