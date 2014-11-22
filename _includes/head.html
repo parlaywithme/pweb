@@ -45,18 +45,18 @@
   <meta name="msapplication-TileImage" content="/favicon-144.png">
   <meta name="msapplication-config" content="/browserconfig.xml">
 
-  <!-- polymer imports -->
-  <link rel="import" 
-        data-media: "screen and (max-width: 640px)"
-        data-href="/bower_components/core-drawer-panel/core-drawer-panel.html">
-  <link rel="stylesheet" 
-        class="mediaquerydependent"
-        data-media: "screen and (max-width: 640px)"
-        data-href="/bower_components/core-drawer-panel/core-drawer-panel.css">
-  <script src="/bower_components/webcomponentsjs/webcomponents.js"></script>
-
   <link href="/main.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="/main.js" async></script>
+
+  <!-- polymer imports -->
+  <!-- drawer panel - - main.js will check the size of the screen (noted below) to decide whether to load these -->
+  <link rel="import" class="mediaquerydependent" data-media="screen and (max-width: 640px)" data-href="/bower_components/core-drawer-panel/core-drawer-panel.html">
+  <link rel="stylesheet" class="mediaquerydependent" data-media="screen and (max-width: 640px)" data-href="/bower_components/core-drawer-panel/core-drawer-panel.css">
+
+  <!-- polymer js -->
+  <script src="/bower_components/webcomponentsjs/webcomponents.js"></script>
+
+
 </head>
 
 
