@@ -75,7 +75,7 @@ nav > a {
     color: #2ecc40;
     flex-grow: 1;
     font-size: 20px;
-    padding: 20px 0 0;
+    padding: 3px 0 0;
 }
 
 header > nav {
@@ -84,7 +84,7 @@ header > nav {
 }
 
 nav a:not(.logo):not(.signin) {
-    padding: 20px 0;
+    padding: 25px 0;
 }
 
 /* footer */
@@ -165,10 +165,13 @@ svg.signin .iconic-property-fill {
 /* drawer panel */
 
 #drawer-panel, #drawer {
+    position: fixed;
+    width: 100%;
     background-color: white;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow:    2px 2px 4px rgba(0, 0, 0, 0.15);;
-    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow:    2px 2px 4px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);    
+    }
 }
 
 /* page content */
@@ -358,6 +361,10 @@ p.support {
     a.signin {
 	right: 10%;
     }
+
+    #drawer-panel {
+        height: 80px; /* set fixed height when it's on top */
+    }
 }
 
 @media only screen and (max-width : 1100px) {
@@ -385,5 +392,8 @@ p.support {
     }
     #bottom-nav {
         height: 300px;
+    }
+    #drawer-panel {
+        height: 100%; /* make it the whole screen when it's on the side */
     }
 }
