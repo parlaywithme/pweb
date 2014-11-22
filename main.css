@@ -42,6 +42,7 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
 }
 
 header.on-top {
@@ -55,7 +56,8 @@ header > a {
 /* general navbar */
 
 nav {
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -63,9 +65,12 @@ nav {
     align-content: space-around;
 }
 
+#bottom-nav a {
+    padding: 20px;
+}
+
 nav > a {
     color: #2ecc40;
-    width: 100%;
     flex-grow: 1;
     font-size: 20px;
     padding: 20px 0 0;
@@ -78,10 +83,6 @@ header > nav {
 
 nav a:not(.logo):not(.signin) {
     padding: 20px 0;
-}
-
-#drawer-panel {
-    background-color: white;
 }
 
 /* footer */
@@ -137,7 +138,7 @@ svg.logo * {
 a.signin {
     position: absolute;
     right: 15%;
-    /*line-height: 44px;*/ /* (logo font size - signin size) * 2 + signin size */
+    line-height: 44px; /* (logo font size - signin size) * 2 + signin size */
     font-size: 16px;
 }
 
@@ -157,6 +158,17 @@ svg.signin * {
 
 svg.signin .iconic-property-fill {
     fill: #2ecc40;
+}
+
+/* drawer panel */
+
+#drawer-panel {
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+#drawer-panel a {
+    width: 100%;
 }
 
 /* page content */
@@ -360,13 +372,8 @@ p.support {
 
 @media only screen and (max-width : 900px) {
     header {
-	background-color: white;
-	height: 120px; /* todo why is this needed? */
-    }
-
-    nav {
-	width: 80%;
-	margin-left: 10%;
+        background-color: white;
+        height: 120px;/*  todo why is this needed? */
     }
 }
 
