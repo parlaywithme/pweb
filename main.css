@@ -55,9 +55,8 @@ header > a {
 /* general navbar */
 
 nav {
-    width: 60%;
-    /*height: 110px;*/
-    margin-left: 20%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -66,10 +65,9 @@ nav {
 
 nav > a {
     color: #2ecc40;
-    /* width: 100px; */
+    width: 100%;
     flex-grow: 1;
     font-size: 20px;
-    line-height: 44px;
     padding: 20px 0 0;
 }
 
@@ -79,8 +77,11 @@ header > nav {
 }
 
 nav a:not(.logo):not(.signin) {
-    line-height: 70px;
     padding: 20px 0;
+}
+
+#drawer-panel {
+    background-color: white;
 }
 
 /* footer */
@@ -136,7 +137,7 @@ svg.logo * {
 a.signin {
     position: absolute;
     right: 15%;
-    line-height: 44px; /* (logo font size - signin size) * 2 + signin size */
+    /*line-height: 44px;*/ /* (logo font size - signin size) * 2 + signin size */
     font-size: 16px;
 }
 
@@ -160,8 +161,12 @@ svg.signin .iconic-property-fill {
 
 /* page content */
 
+div {
+    overflow: scroll; /* polymer drawer forces content to be unscrollable, must be overriden */
+}
+
 main {
-    padding-top: 200px;
+    padding-top: 100px; /* changed to reflect moving nav to the side drawer */
 }
 
 .down {
@@ -365,31 +370,29 @@ p.support {
     }
 }
 
-@media only screen and (max-width : 640px) {
-/*    nav {
-	width: 90%;
-	margin-left: 5%;
-    }*/
+/* reset to 640 to match polymer's default responsive width */
+@media only screen and (max-width : 640px) { 
+    nav {
+        height: 100%;
+    }
     nav > a {
         width: 100%;
         padding: 0;
-        line-height: 50px;
+    }
+    #bottom-nav {
+        height: 300px;
     }
 }
 
-@media only screen and (max-width : 450px) {  
-    nav {
-	height: auto;
-    }
-
+/*this should no longer be needed - under 640 the drawer will slide out of view and on the index the bottom nav will go vertical*/
+/*@media only screen and (max-width : 450px) {  
     #bottom-nav {
         width: 100%;
-	margin-left: 0;
+	    margin-left: 0;
     }
 
     #bottom-nav > a {  
         width: 100%;
-	padding: 0;
-	line-height: 50px;
+        padding: 0;
     }  
-}  
+}*/
