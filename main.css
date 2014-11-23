@@ -55,6 +55,48 @@ header > a {
     padding: 25px 40px;
 }
 
+#page-top-navbar {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: #2ecc40;
+    -moz-box-shadow:    2px 2px 2px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+    display: none;
+}
+
+#page-top-navbar > core-icon-button, #page-top-navbar > h1 {
+    float: left;
+    color: white;
+}
+
+#page-top-navbar > core-icon-button {
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    margin: 12px;
+}
+
+#page-top-navbar > h1 {
+    padding: 0;
+    margin: 4px;
+}
+
+#page-top-navbar > a {
+    float: right;
+    padding: 0;
+    margin: 8px 15px 0 0;
+}
+
+svg#page-logo * {
+    fill: white;
+    /*float: right;
+    padding: 0;
+    margin: 10px;*/
+}
+
+
 /* general navbar */
 
 nav {
@@ -395,5 +437,8 @@ p.support {
     }
     #drawer-panel {
         height: 100%; /* make it the whole screen when it's on the side */
+    }
+    #page-top-navbar {
+        display: block; /* show top green navbar on small screens */
     }
 }
