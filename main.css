@@ -218,12 +218,16 @@ svg.signin .iconic-property-fill {
 
 /* page content */
 
-#main-content {
+#full-page {
     overflow: scroll;
 }
 
+#main-content {
+    padding-top: 100px;
+}
+
 .down {
-    margin-top: 60px;
+    margin-top: 140px;
 }
 
 h1 {
@@ -418,7 +422,7 @@ p.support {
 @media only screen and (max-width : 900px) {
     header {
         background-color: white;
-        height: 120px;/*  todo why is this needed? */
+        height: 120px;  todo why is this needed? 
     }
 }
 
@@ -429,12 +433,15 @@ p.support {
         padding: 0;
     }
     #bottom-nav {
-        height: 300px;
+        height: 300px; /* on index */
     }
     #drawer-panel {
         height: 100%; /* make it the whole screen when it's on the side */
     }
     #page-top-navbar {
         display: block; /* show top green navbar on small screens */
+    }
+    #main-content {
+        padding-top: 70px; /* top navbar smaller on small screens */
     }
 }
