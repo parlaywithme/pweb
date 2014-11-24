@@ -64,6 +64,7 @@ header > a {
     -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
     display: none;
+    clear: both;
 }
 
 #page-top-navbar > core-icon-button, #page-top-navbar > h1 {
@@ -214,16 +215,11 @@ svg.signin .iconic-property-fill {
     -moz-box-shadow:    2px 2px 4px rgba(0, 0, 0, 0.15);
     -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);    
     }
-}
 
 /* page content */
 
-div {
-    overflow: scroll; /* polymer drawer forces content to be unscrollable, must be overriden */
-}
-
-main {
-    padding-top: 100px; /* changed to reflect moving nav to the side drawer */
+#main-content {
+    overflow: scroll;
 }
 
 .down {
