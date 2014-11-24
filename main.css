@@ -36,15 +36,18 @@ a.current:hover {
     opacity: 1;
 }
 
+.shadow {
+    -moz-box-shadow:    2px 2px 2px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);    
+}
+
 /* header */
 
 header {
     width: 100%;
     position: fixed;
     top: 0;
-    -moz-box-shadow:    2px 2px 2px rgba(0, 0, 0, 0.15);
-    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
 }
 
 header.on-top {
@@ -60,9 +63,6 @@ header > a {
     height: 50px;
     position: fixed;
     background-color: #2ecc40;
-    -moz-box-shadow:    2px 2px 2px rgba(0, 0, 0, 0.15);
-    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
     display: none;
     clear: both;
 }
@@ -115,7 +115,6 @@ nav {
 }
 
 nav > a {
-    color: #2ecc40;
     flex-grow: 1;
     font-size: 20px;
     padding: 3px 0 0;
@@ -210,10 +209,7 @@ svg.signin .iconic-property-fill {
 #drawer-panel, #drawer {
     position: fixed;
     width: 100%;
-    background-color: white;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow:    2px 2px 4px rgba(0, 0, 0, 0.15);
-    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);    
+    background-color: white;    
     }
 
 /* page content */
