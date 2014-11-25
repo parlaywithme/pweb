@@ -215,7 +215,7 @@ svg.signin .iconic-property-fill {
 /* page content */
 
 #full-page {
-    overflow: scroll;
+    overflow: auto;
 }
 
 main {
