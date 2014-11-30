@@ -441,3 +441,11 @@ p.support {
         padding-top: 70px; /* top navbar smaller on small screens */
     }
 }
+
+@media only screen and (min-width: 641px) {
+    #full-page {
+	position: fixed;
+	left: 0;
+	z-index: 100;
+    }
+}
