@@ -11,23 +11,27 @@ window.onload = function() {
     links[1].onclick = alert_dev;
 };
 
-// load polymer elements only on larger screens - size set in head.html
+document.addEventListener("DOMContentLoaded", function(event) { 
 
-(function(){
-  var queries = document.
-                querySelectorAll('.mediaquerydependent'),
-      all = queries.length,
-      cur = null,
-      attr = null;
-  while (all--) {
-    cur = queries[all];
-    if (cur.dataset.media &&
-        window.matchMedia(cur.dataset.media).matches) {
-      for (attr in cur.dataset) {
-        if (attr !== 'media') {
-          cur.setAttribute(attr, cur.dataset[attr]);
-        }
-      }
+    window.drawer = document.querySelector('core-drawer-panel');
+
+    if(window.screen.width > 640) {
+	drawer.setAttribute('drawerWidth','100%');
     }
-  }
-}());
+
+    // so it doesn't run at pageload
+    setTimeout( function() {
+	window.addEventListener('core-responsive-change', function(e) {
+    	    if (e.detail.narrow) {
+		drawer.setAttribute('drawerWidth', '256px');
+	    }
+	    else {
+		drawer.setAttribute('drawerWidth','100%');
+	    }
+	});
+    }, 1000);
+
+});
+
+
+
