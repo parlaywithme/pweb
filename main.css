@@ -219,7 +219,7 @@ svg.signin .iconic-property-fill {
 }
 
 main {
-    padding-top: 100px;
+    margin-top: 80px;
 }
 
 .down {
@@ -444,8 +444,13 @@ p.support {
 
 @media only screen and (min-width: 641px) {
     #full-page {
-	position: fixed;
-	left: 0;
-	z-index: 100;
+        margin-top: 80px; /*forces the full-page element below the nav so it doesn't overlap*/    
+        width: 100%;
+    	position: fixed;
+    	left: 0;
+    	z-index: 100;
+    }
+    main {
+        margin-top: 0px; /*main top margin set as 80px default, but that only works for small screens*/
     }
 }
