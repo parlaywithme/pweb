@@ -28,38 +28,38 @@ current: legal
 
 
 
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://d3js.org/topojson.v1.min.js"></script>
-<script src="/datamaps.usa.min.js"></script>
+<!-- <script src="vendor/d3.v3.min.js" async></script> -->
+<!-- <script src="vendor/topojson.v1.min.js" async></script> -->
+<!-- <script src="vendor/datamaps.usa.min.js" async></script> -->
 
-<script>
-var election = new Datamap({
-    scope: 'usa',
-    element: document.getElementById('map'),
-    geographyConfig: {
-	highlightBorderColor: '#bada55',
-	popupTemplate: function(geography, data) {
-	    return '<div class="hoverinfo">' + geography.properties.name;
-	},
-	highlightBorderWidth: 3
-    },
-    fills: {
-	yellow: '#EDDC4E',
-	defaultFill: '#A9C0DE'
-    },
-    data:{
-	"AR": {
-	    "fillKey": "yellow"
-	},
-	"WA": {
-	    "fillKey": "yellow"
-	},
-	"UT": {
-	    "fillKey": "yellow"
-	},
-	"NV": {
-	    "fillKey": "yellow"
-	}
-    }
-});
-</script>
+<!-- <script> -->
+<!-- var election = new Datamap({ -->
+<!--     scope: 'usa', -->
+<!--     element: document.getElementById('map'), -->
+<!--     geographyConfig: { -->
+<!-- 	highlightBorderColor: '#bada55', -->
+<!-- 	popupTemplate: function(geography, data) { -->
+<!-- 	    return '<div class="hoverinfo">' + geography.properties.name; -->
+<!-- 	}, -->
+<!-- 	highlightBorderWidth: 3 -->
+<!--     }, -->
+<!--     fills: { -->
+<!-- 	yellow: '#EDDC4E', -->
+<!-- 	defaultFill: '#A9C0DE' -->
+<!--     }, -->
+<!--     data:{ -->
+<!-- 	"AR": { -->
+<!-- 	    "fillKey": "yellow" -->
+<!-- 	}, -->
+<!-- 	"WA": { -->
+<!-- 	    "fillKey": "yellow" -->
+<!-- 	}, -->
+<!-- 	"UT": { -->
+<!-- 	    "fillKey": "yellow" -->
+<!-- 	}, -->
+<!-- 	"NV": { -->
+<!-- 	    "fillKey": "yellow" -->
+<!-- 	} -->
+<!--     } -->
+<!-- }); -->
+<!-- </script> -->

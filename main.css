@@ -67,7 +67,7 @@ header > a {
     clear: both;
 }
 
-#page-top-navbar > core-icon-button, #page-top-navbar > h1 {
+#page-top-navbar > core-icon-button {
     float: left;
     color: white;
 }
@@ -79,22 +79,25 @@ header > a {
     margin: 12px;
 }
 
-#page-top-navbar > h1 {
+/* TODO OMG it's impossible to center this thing. tried all these methods: */
+/* http://css-tricks.com/centering-css-complete-guide/ */
+#page-top-navbar > a.logo {
+    float: left;
+    color: white;
     padding: 0;
-    margin: 4px;
+    margin: 8px 0 0 90px;
 }
 
-#page-top-navbar > a {
-    float: right;
-    padding: 0;
-    margin: 8px 15px 0 0;
+#page-top-navbar h1 {
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    margin-right: 10px;
 }
 
 svg#page-logo * {
+    display: inline-block;
     fill: white;
-    /*float: right;
-    padding: 0;
-    margin: 10px;*/
 }
 
 
@@ -104,9 +107,13 @@ nav {
     width: 100%;
     height: 100%;
     display: flex;
+    display: -webkit-flex;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     justify-content: space-around;
+    -webkit-justify-content: space-around;
     align-content: space-around;
+    -webkit-align-content: space-around;
 }
 
 #bottom-nav {
@@ -116,6 +123,7 @@ nav {
 
 nav > a {
     flex-grow: 1;
+    -webkit-flex-grow: 1;
     font-size: 20px;
     padding: 3px 0 0;
 }
@@ -160,6 +168,7 @@ nav > a.signin
 {
     position: static;
     flex-grow: 2;
+    -webkit-flex-grow: 2;
 }
 
 h1.logo {
@@ -222,6 +231,10 @@ main {
     margin-top: 80px;
 }
 
+.headlines {
+    padding: 0 20px;
+}
+
 .down {
     margin-top: 140px;
 }
@@ -238,17 +251,21 @@ h2 {
 }
 
 .download-links {
-    width: 40%;
-    margin-left: 30%;
     display: flex;
-    justify-content: space-around;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
     align-content: space-around;
+    -webkit-align-content: space-around;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
 .download-links > a {
     opacity: 0.2;
+    margin: 0 10px;
 }
 
 .download-links > a > img{
@@ -287,8 +304,11 @@ td.right {
     width: 300px;
     margin: 30px auto 70px;
     display: flex;
+    display: -webkit-flex;
     justify-content: space-around;
+    -webkit-justify-content: space-around;
     align-content: space-around;
+    -webkit-align-content: space-around;
 }
 
 #names > div {
@@ -365,29 +385,57 @@ p.support {
     width: 303px;
 }
 
-.cards {
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-}
+/* product */
 
 .card {
-    background: #BCF5A9;
-    border: 5px solid #BCF5A9;
-    padding: 5px;
-    margin: 15px;
-    color: #424242;
-    position: relative;
-    /* float: left; */
-    width: 25%;
-    height: 150px;
+    float: left;
+    width: 33%;
+    padding: 5%;
     line-height: 130%;
-    display: block;
-    -webkit-margin-before: 2em;
-    -webkit-margin-after: 2em;
-    -webkit-margin-start: 2em;
-    -webkit-margin-end: 2em;
+    text-align: center;
 }
+
+/* fees */
+
+table {
+    margin-top: 40px;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 15px 15px 5px;
+}
+
+tr.top > td {
+    padding: 5px 15px 15px;
+}
+
+td.term {
+    text-align: right;
+    border-right: solid 1px #ccc;
+}
+
+td.no-term {
+    text-align: center;
+}
+
+td.label {
+    text-align: center;
+    padding-right: 40px !important;
+}
+
+tr.challenges > td {
+    padding-top: 60px !important;
+}
+
+.free {
+    color: #2ecc40;
+}
+
+.definition-list td:first-child {
+    text-align: right;
+}
+
 
 /* responsive adjustment */
 
@@ -402,6 +450,12 @@ p.support {
 
     #drawer-panel {
         height: 80px; /* set fixed height when it's on top */
+    }
+
+    .thin.er, 
+    .thin {
+	width: 60%;
+	margin-left: 20%;
     }
 }
 
@@ -422,25 +476,6 @@ p.support {
     }
 }
 
-/* reset to 640 to match polymer's default responsive width */
-@media only screen and (max-width : 640px) { 
-    nav > a {
-        width: 100%;
-        padding: 0;
-    }
-    #bottom-nav {
-        height: 300px; /* on index */
-    }
-    #drawer-panel {
-        height: 100%; /* make it the whole screen when it's on the side */
-    }
-    #page-top-navbar {
-        display: block; /* show top green navbar on small screens */
-    }
-    #main-content {
-        padding-top: 70px; /* top navbar smaller on small screens */
-    }
-}
 
 @media only screen and (min-width: 641px) {
     #full-page {
@@ -449,8 +484,73 @@ p.support {
     	position: fixed;
     	left: 0;
     	z-index: 100;
+	padding-bottom: 80px; /* doesn't scroll down all the way (TODO why?), so this allows you to see copyright */
     }
-    main {
-        margin-top: 0px; /*main top margin set as 80px default, but that only works for small screens*/
+
+    #home-link {
+	display: none;
+    }
+}
+
+/* reset to 640 to match polymer's default responsive width */
+@media only screen and (max-width : 640px) { 
+
+    nav {
+	padding-top: 50px;
+    }
+
+    nav > a {
+        width: 100%;
+        padding: 5px 0 !important;
+    }
+
+    nav > .logo {
+	display: none;
+    }
+
+   #bottom-nav {
+        height: 300px; /* on index */
+    }
+
+    #drawer-panel {
+        height: 100%; /* make it the whole screen when it's on the side */
+    }
+
+    #page-top-navbar {
+        display: block; /* show top green navbar on small screens */
+    }
+
+    #main-content {
+        padding-top: 70px; /* top navbar smaller on small screens */
+    }
+
+    .card {
+    	float: none;
+	width: 100%;
+	padding: 5px 25%;
+	text-align: left;
+    }
+
+    .thin.er,
+    .thin {
+	width: 70%;
+	margin-left: 15%;
+    }
+}
+
+@media only screen and (max-width : 400px) { 
+    .card {
+        padding: 5px 10%;
+    }
+}
+
+@media only screen and (max-width : 370px) { 
+    td.label {
+	padding-right: 10px !important;
+    }
+
+    .thin.er {
+	width: 90%;
+	margin-left: 5%;
     }
 }
