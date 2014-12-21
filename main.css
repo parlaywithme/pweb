@@ -146,6 +146,18 @@ footer {
     display: block;
 }
 
+#social * {
+    fill: #ccc;
+}
+
+#social > a {
+    margin: 0 20px;
+} 
+
+#copyright {
+    padding-bottom: 100px; /* TODO needed because page doesn't scroll all the way to the bottom */
+}
+
 footer > p {
     color: #aaaaaa;
     font-weight: 200;
