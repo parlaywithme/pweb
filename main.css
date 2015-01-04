@@ -449,6 +449,10 @@ tr.challenges > td {
 }
 
 
+p.fee {
+    margin-bottom: 50px;
+}
+
 /* responsive adjustment */
 
 @media only screen and (max-width : 1280px) {
