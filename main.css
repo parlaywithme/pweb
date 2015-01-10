@@ -319,9 +319,19 @@ td.right {
     margin-top: 50px;
 }
 
+/* team */
+
+img.head {
+    width: 100%;
+}
+
+img.joint {
+    width: 50%;
+}
+
 #names {
     width: 300px;
-    margin: 30px auto 70px;
+    margin: 30px auto 40px;
     display: flex;
     display: -webkit-flex;
     justify-content: space-around;
@@ -343,6 +353,12 @@ td.right {
     line-height: 63px;
 }
 
+.title {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
 dt,
 dd
 {
@@ -352,15 +368,17 @@ dd
 
 dt {
     display: block;
-    width: 10%;
+    width: 40%;
     clear: left;
     font-weight: 300;
     font-size: 24px;
+    margin-bottom: 40px;
 }
 
 dd {
-    width: 80%;
+    width: 50%;
     margin-top: 6px;
+    margin-left: 10%;
 }
 
 .clear {
@@ -368,7 +386,11 @@ dd {
 }
 
 .bios {
+    width: 60%;
+    margin-top: 50px;
+    margin-left: 20%;
     margin-bottom: 240px;
+    text-align: left;
 }
 
 p.center {
@@ -497,6 +519,15 @@ p.fee {
         background-color: white;
         height: 120px;  todo why is this needed? 
     }
+
+    .bios {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    img.joint {
+        width: 80%;
+    }
 }
 
 
@@ -559,6 +590,17 @@ p.fee {
 	width: 70%;
 	margin-left: 15%;
     }
+
+    dt,
+    dd {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .title {
+        text-align: center;
+    }
+
 }
 
 @media only screen and (max-width : 400px) { 
