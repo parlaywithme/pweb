@@ -179,7 +179,7 @@ nav + footer {
 
 a.logo {
     position: absolute;
-    left: 15%;
+    left: 10%;
 }
 
 nav > a.logo,
@@ -209,7 +209,7 @@ svg.logo * {
 
 a.signin {
     position: absolute;
-    right: 15%;
+    right: 10%;
     line-height: 44px; /* (logo font size - signin size) * 2 + signin size */
     font-size: 16px;
 }
@@ -284,6 +284,7 @@ h2 {
 
 .iphone6 {
     margin-right: 3%;
+    margin-bottom: 30px;
 }
 
 .screen > img {
@@ -493,13 +494,26 @@ p.fee {
 
 /* responsive adjustment */
 
-@media only screen and (max-width : 1280px) {
+@media only screen and (max-width : 1400px) {
+
     a.logo {
-	left: 10%;
+	left: 5%;
     }
 
     a.signin {
-	right: 10%;
+	right: 5%;
+    }
+
+}
+
+@media only screen and (max-width : 1280px) {
+
+    a.logo {
+	left: 0;
+    }
+
+    a.signin {
+	right: 0;
     }
 
     #drawer-panel {
@@ -511,24 +525,18 @@ p.fee {
 	width: 60%;
 	margin-left: 20%;
     }
+
 }
 
-@media only screen and (max-width : 1100px) {
-    a.logo {
-	left: 0;
-    }
 
-    a.signin {
-	right: 0;
-    }
-}
-
-@media only screen and (max-width : 900px) {
+@media only screen and (max-width : 1000px) {
     header {
         background-color: white;
         height: 120px;  /* todo why is this needed?  */
     }
+}
 
+@media only screen and (max-width : 900px) {
     .bios {
         width: 80%;
         margin-left: 10%;
@@ -613,9 +621,16 @@ p.fee {
 }
 
 @media only screen and (max-width : 400px) { 
+
     .card {
         padding: 5px 10%;
     }
+
+    .iphone6 {
+        transform: scale(.9) translateX(-15px);
+        margin-bottom: 0;
+    }
+
 }
 
 @media only screen and (max-width : 370px) { 
@@ -627,4 +642,40 @@ p.fee {
 	width: 90%;
 	margin-left: 5%;
     }
+}
+
+@media only screen and (max-width : 360px) {
+    
+    .iphone6 {
+        transform: scale(.87) translateX(-10px);
+    }
+
+    .nexus5 {
+        transform: scale(.93);
+    }
+
+}
+
+@media only screen and (max-width : 360px) {
+    
+    .iphone6 {
+        transform: scale(.85) translateX(-30px);
+    }
+
+    .nexus5 {
+        transform: scale(.93);
+    }
+
+}
+
+@media only screen and (max-width : 340px) {
+    
+    .iphone6 {
+        transform: scale(.78) translateX(-45px);
+    }
+
+    .nexus5 {
+        transform: scale(.93) translateX(-8px);
+    }
+
 }
