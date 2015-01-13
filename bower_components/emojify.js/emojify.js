@@ -130,10 +130,15 @@
                 emojiElement.setAttribute('title', ':' + emojiName + ':');
                 emojiElement.setAttribute('alt', ':' + emojiName + ':');
                 emojiElement.setAttribute('align', 'absmiddle');
-                node.splitText(match.index);
+                var a = node.splitText(match.index);
                 node.nextSibling.nodeValue = node.nextSibling.nodeValue.substr(match[0].length, node.nextSibling.nodeValue.length);
-                emojiElement.appendChild(node.splitText(match.index));
+                
+                var b = node.splitText(match.index);
+                console.log('before append', a, b, emojiElement , node, match);
+                emojiElement.appendChild(b);
+                console.log('after append');
                 node.parentNode.insertBefore(emojiElement, node.nextSibling);
+                console.log('end insert');
             }
 
             /* Given an regex match, return the name of the matching emoji */

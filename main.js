@@ -1,10 +1,14 @@
+loren_alt = false;
+joint_alt = false;
+sidney_alt = false;
+
 alert_dev = function () {
     swal("Not quite yet!", "Parlay is currently under development.", "warning");
 };
 
 window.onload = function() {
 
-    links = document.querySelectorAll('.download-links > a');
+    var links = document.querySelectorAll('.download-links > a');
     if(links.length === 0)
 	return;
 
@@ -15,7 +19,8 @@ window.onload = function() {
 
 document.addEventListener("DOMContentLoaded", function(event) { 
 
-    emojify.run();
+    // emojify.setConfig({"only_crawl_id": "landing"});
+    // emojify.run();
 
     window.drawer = document.querySelector('core-drawer-panel');
 
@@ -35,7 +40,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	});
     }, 1000);
 
+
+    var names = ['loren','sidney','joint'];
+    names.forEach( function(name) {
+        var img = $('#' + name);
+        img.mouseenter( function() {
+            img.attr('src', "/images/" + name + "_alt.gif");
+        }).mouseleave( function() {
+            img.attr('src', "/images/" + name + ".jpg");
+        });
+        img.click( function() {
+            alt = name + '_alt';
+            if (window[alt])
+                img.attr('src', "/images/" + name + ".jpg");
+            else
+                img.attr('src', "/images/" + name + "_alt.gif");
+            window[alt] = !window[alt];
+        });
+    });
+                   
+
 });
 
 
-emojify.setConfig({"img_dir": "bower_components/emojify.js/images/emoji"});
