@@ -269,6 +269,26 @@ h2 {
     color: #777777;
 }
 
+/* index */
+
+#ideas {
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 60px;
+    padding: 0;
+    list-style-type: none;
+    height: 150px;
+    overflow-y: auto;
+}
+
+#ideas p {
+    margin: 0 0 10px;
+}
+
+h4 {
+    margin: 5px 0;
+}
+
 .download-links {
     display: flex;
     display: -webkit-flex;
@@ -429,7 +449,8 @@ p.support {
 }
 
 #underdev {
-    margin: 60px 0 80px;
+    margin: 60px 0;
+    text-align: center;
 }
 
 #iphone {
@@ -534,6 +555,11 @@ p.fee {
         background-color: white;
         height: 120px;  /* todo why is this needed?  */
     }
+
+    #ideas {
+        width: 90%;
+        margin-left: 5%;
+    }
 }
 
 @media only screen and (max-width : 900px) {
@@ -547,6 +573,13 @@ p.fee {
     }
 }
 
+
+@media only screen and (max-width: 800px) {
+    #ideas {
+        width: 100%;
+        margin-left: 0;
+    }
+}
 
 @media only screen and (min-width: 641px) {
     #full-page {
@@ -620,7 +653,31 @@ p.fee {
 
 }
 
+@media only screen and (max-width: 500px) {
+    .thin {
+        width: 84%;
+        margin-left: 8%;
+    }
+}
+        
+
 @media only screen and (max-width : 400px) { 
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #underdev {
+        margin: 30px 0;
+    }
+
+    #ideas {
+        margin-bottom: 0;
+    }
+
+    #bottom-nav {
+        padding-top: 0;
+    }
 
     .card {
         padding: 5px 10%;
