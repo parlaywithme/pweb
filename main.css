@@ -685,6 +685,7 @@ p.fee {
 
     .iphone6 {
         transform: scale(.9) translateX(-15px);
+        -webkit-transform: scale(.9) translateX(-15px);
         margin-bottom: 0;
     }
 
@@ -705,10 +706,12 @@ p.fee {
     
     .iphone6 {
         transform: scale(.87) translateX(-10px);
+        -webkit-transform: scale(.87) translateX(-10px);
     }
 
     .nexus5 {
         transform: scale(.93);
+        -webkit-transform: scale(.93);
     }
 
 }
@@ -717,10 +720,12 @@ p.fee {
     
     .iphone6 {
         transform: scale(.85) translateX(-30px);
+        -webkit-transform: scale(.85) translateX(-30px);
     }
 
     .nexus5 {
         transform: scale(.93);
+        -webkit-transform: scale(.93);
     }
 
 }
@@ -729,10 +734,12 @@ p.fee {
     
     .iphone6 {
         transform: scale(.78) translateX(-45px);
+        -webkit-transform: scale(.78) translateX(-45px);
     }
 
     .nexus5 {
         transform: scale(.93) translateX(-8px);
+        -webkit-transform: scale(.93) translateX(-8px);
     }
 
 }
