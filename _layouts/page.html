@@ -53,7 +53,7 @@ layout: default
       <a href="/" id="home-link">Home</a>
       <a href="/product/" {% if page.current == 'product' %}class="current"{% endif %}>Product</a>
       <a href="/team/" {% if page.current == 'team' %}class="current"{% endif %}>Team</a>
-      <a href="/legal/" {% if page.current == 'legal' %}class="current"{% endif %}>Legal</a>
+      <a href="/legal/" {% if page.current == 'legal' or page.current == 'terms' or page.current == 'privacy' %}class="current"{% endif %}>Legal</a>
       <a href="/fees/" {% if page.current == 'fees' %}class="current"{% endif %}>Fees</a>
       <a href="/support/" {% if page.current == 'support' %}class="current"{% endif %}>Support</a>
       <!-- <a href="/security/">Security</a> -->
