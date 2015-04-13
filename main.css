@@ -18,11 +18,10 @@ body {
     -webkit-box-sizing: border-box;
 }
 
-img.emoji {
-    height: 1em;
-    width: 1em;
-    margin: 0 .05em 0 .1em;
-    vertical-align: -0.1em;
+.emoji {
+    height: 1.5em;
+    width: 1.5em;
+    vertical-align: -0.3em;
 }
 
 a {
@@ -349,6 +348,69 @@ td.right {
     margin-top: 50px;
 }
 
+/* legal */
+
+.legal {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.subheading {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-content: space-around;
+    -webkit-align-content: space-around;
+    margin-bottom: 30px;
+}
+
+.subheading > li {
+    margin: 0 5%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.summary {
+    margin: 0 5%;
+    padding: 5%;
+    background: #eee;
+    text-align: left;
+}
+
+.summary > h3 {
+    margin: 0 0 5%;
+    color: #555;
+}
+
+ol {
+    margin-right: 5%;
+    text-align: left;
+}
+
+ul.-inner {
+    margin: 15px 0;
+}
+
+ul.-basic {
+    margin-left: 15px;
+    list-style-type: disc;
+}
+
+em.-bold {
+    font-style: normal;
+    font-weight: 600;
+}
+
+em.-itbold {
+    font-weight: 600;
+}
+
+
 /* team */
 
 img.head {
@@ -568,6 +630,10 @@ p.fee {
     	left: 0;
     	z-index: 100;
 	padding-bottom: 80px; /* doesn't scroll down all the way (TODO why?), so this allows you to see copyright */
+    }
+
+    .subheading {
+        margin-bottom: 80px;
     }
 
     #home-link {
