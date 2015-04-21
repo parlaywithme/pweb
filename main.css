@@ -45,7 +45,7 @@ a.current:hover {
 .shadow {
     -moz-box-shadow:    2px 2px 2px rgba(0, 0, 0, 0.15);
     -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);    
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
 }
 
 /* header */
@@ -158,7 +158,7 @@ footer {
 
 #social > a {
     margin: 0 20px;
-} 
+}
 
 #copyright {
     padding-bottom: 100px; /* TODO needed because page doesn't scroll all the way to the bottom */
@@ -236,7 +236,7 @@ svg.signin .iconic-property-fill {
 #drawer-panel, #drawer {
     position: fixed;
     width: 100%;
-    background-color: white;    
+    background-color: white;
     }
 
 /* page content */
@@ -529,6 +529,26 @@ p.support {
     text-align: center;
 }
 
+.product-screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.image-container {
+  width:275px;
+}
+
+.image-container > img {
+  width: 100%;
+  margin-bottom: 50px;
+
+}
+
 /* fees */
 
 table {
@@ -582,7 +602,7 @@ p.fee {
         height: 80px; /* set fixed height when it's on top */
     }
 
-    .thin.er, 
+    .thin.er,
     .thin {
 	width: 60%;
 	margin-left: 20%;
@@ -624,7 +644,7 @@ p.fee {
 
 @media only screen and (min-width: 641px) {
     #full-page {
-        margin-top: 80px; /*forces the full-page element below the nav so it doesn't overlap*/    
+        margin-top: 80px; /*forces the full-page element below the nav so it doesn't overlap*/
         width: 100%;
     	position: fixed;
     	left: 0;
@@ -642,7 +662,7 @@ p.fee {
 }
 
 /* reset to 640 to match polymer's default responsive width */
-@media only screen and (max-width : 640px) { 
+@media only screen and (max-width : 640px) {
 
     nav {
 	padding-top: 50px;
@@ -704,9 +724,9 @@ p.fee {
         margin-left: 8%;
     }
 }
-        
 
-@media only screen and (max-width : 400px) { 
+
+@media only screen and (max-width : 400px) {
 
     h1 {
         font-size: 40px;
@@ -736,7 +756,7 @@ p.fee {
 
 }
 
-@media only screen and (max-width : 370px) { 
+@media only screen and (max-width : 370px) {
     td.label {
 	padding-right: 10px !important;
     }
@@ -748,7 +768,7 @@ p.fee {
 }
 
 @media only screen and (max-width : 360px) {
-    
+
     .iphone6 {
         transform: scale(.87) translateX(-10px);
         -webkit-transform: scale(.87) translateX(-10px);
@@ -762,7 +782,7 @@ p.fee {
 }
 
 @media only screen and (max-width : 360px) {
-    
+
     .iphone6 {
         transform: scale(.85) translateX(-30px);
         -webkit-transform: scale(.85) translateX(-30px);
@@ -776,7 +796,7 @@ p.fee {
 }
 
 @media only screen and (max-width : 340px) {
-    
+
     .iphone6 {
         transform: scale(.78) translateX(-45px);
         -webkit-transform: scale(.78) translateX(-45px);
