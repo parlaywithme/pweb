@@ -121,7 +121,7 @@ nav {
     -webkit-align-content: space-around;
 }
 
-/* doesn't get overrideen properly by #bottom-nav in chrome */
+/* doesn't get overrideen properly by #bottom-nav justify center in chrome */
 nav:not(#bottom-nav) {
     justify-content: space-around;
     -webkit-justify-content: space-around;
