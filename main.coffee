@@ -38,7 +38,7 @@ document.addEventListener "DOMContentLoaded", (event) ->
         drawer?.setAttribute 'drawerWidth', '100%'
     , 1000
 
-  if window.location.pathname in ["/team/index.html", "/team/"]
+  if window.location.pathname in ["/index.html", "/"]
     names = ['loren','sidney','joint']
     for name in names
       do (name) ->
