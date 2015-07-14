@@ -4,17 +4,21 @@ title: Security – Parlay
 current: security
 ---
 
-<section class="legal">
+<section class="legal security">
   
   <div class="summary">
+    <h3>
+      Cliffnotes
+    </h3>
+
     We do our best to keep your funds and data secure, and we are very thorough and paranoid in our efforts. We store your bitcoin with our partner Coinbase, whose <a href="https://www.coinbase.com/security">security practices</a> are the best in the business.
   </div>
 
-  <p>
+  <h3>
     Here are some of the things we do:
-  </p>
+  </h3>
   
-  <ul>
+  <ul class="-basic">
     <li>
       Reward independent security researchers for discovering and responsibly disclosing vulnerabilities in our software: see <a href="https://hackerone.com/parlay/">our HackerOne profile</a>.
     </li>
@@ -49,7 +53,7 @@ current: security
       Sanitize all user-provided data before putting it in the DOM (XSS).
     </li>
     <li>
-      Use localStorage instead of session cookies (no CSRF).
+      Use localStorage instead of session cookies (CSRF).
     </li>
     <li>
       Use X-Frame-Options headers and content security policy directives.
@@ -67,7 +71,7 @@ current: security
     We have also audited our source code for the following types of vulnerabilities:
   </p>
 
-  <ul>
+  <ul class="-basic">
     <li>
       Parameter manipulation
     </li>

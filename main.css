@@ -502,8 +502,9 @@ ul.-inner {
 }
 
 ul.-basic {
-    margin-left: 15px;
+    margin-left: 30px;
     list-style-type: disc;
+    padding-right: 10px;
 }
 
 em.-bold {
@@ -515,6 +516,22 @@ em.-itbold {
     font-weight: 600;
 }
 
+/* security */
+
+
+.security {
+    padding: 0 10px;
+    text-align: left;
+}
+
+.security > h3 {
+    margin: 0 20% 30px;
+    text-align: center;
+}
+
+.security > ul > li {
+    margin-bottom: 10px;
+}
 
 /* team */
 
