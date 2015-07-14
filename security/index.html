@@ -1,0 +1,91 @@
+---
+layout: legal
+title: Security – Parlay
+current: security
+---
+
+<section class="legal">
+  
+  <div class="summary">
+    We do our best to keep your funds and data secure, and we are very thorough and paranoid in our efforts. We store your bitcoin with our partner Coinbase, whose <a href="https://www.coinbase.com/security">security practices</a> are the best in the business.
+  </div>
+
+  <p>
+    Here are some of the things we do:
+  </p>
+  
+  <ul>
+    <li>
+      Reward independent security researchers for discovering and responsibly disclosing vulnerabilities in our software: see <a href="https://hackerone.com/parlay/">our HackerOne profile</a>.
+    </li>
+    <li>
+      Continuous security patching.
+    </li>
+    <li>
+      Continuous security monitoring from <a href="https://detectify.com/">Detectify</a>.
+    </li>
+    <li>
+      Continuous database balance sanity checks. We will not be another MtGox.
+    </li>
+    <li>
+      Consider comprimised any machine that has been used for web browsing or has run Adobe or Microsoft software.
+    </li>
+    <li>
+      Access production environment and sensitive 3rd-party services from uncompromised computers with 2FA.
+    </li>
+    <li>
+      Use gratuitously strong random cycling passwords and 2FA with sensitive 3rd-party services.
+    </li>
+    <li>
+      Cycle API keys.
+    </li>
+    <li>
+      Force HTTPS connections to our server in order to secure your data over the wire.
+    </li>
+    <li>
+      Client-side password hashing with bcrypt: our servers never see your password.
+    </li>
+    <li>
+      Sanitize all user-provided data before putting it in the DOM (XSS).
+    </li>
+    <li>
+      Use localStorage instead of session cookies (no CSRF).
+    </li>
+    <li>
+      Use X-Frame-Options headers and content security policy directives.
+    </li>
+    <li>
+      Meteor methods with thoroughly checked arguments and user authority in lieu of complex allow/deny rules.
+    </li>
+  </ul>
+
+  <p>
+    We will hire a skilled security firm to do an in-depth pentest once we can afford to do so.
+  </p>
+
+  <p>
+    We have also audited our source code for the following types of vulnerabilities:
+  </p>
+
+  <ul>
+    <li>
+      Parameter manipulation
+    </li>
+    <li>
+      Replay attacks
+    </li>
+    <li>
+      TOCTOU and race conditions
+    </li>
+    <li>
+      Number processing, including conversion, rounding, and overflows
+    </li>
+    <li>
+      Private data exposure
+    </li>
+    <li>
+      MongoDB injection
+    </li>
+  </ul>
+
+</section>
