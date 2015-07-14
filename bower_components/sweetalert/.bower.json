@@ -18,15 +18,14 @@
     "url": "git@github.com:t4t5/sweetalert.git"
   },
   "license": "MIT",
-  "version": "0.3.1",
-  "_release": "0.3.1",
+  "version": "0.3.3",
+  "_release": "0.3.3",
   "_resolution": {
     "type": "version",
-    "tag": "v0.3.1",
-    "commit": "3cc613457d97e99a3fe64288204c612718d001a4"
+    "tag": "v0.3.3",
+    "commit": "ebbf2612275a1a1dfc482024f6152b271e241d9f"
   },
   "_source": "git://github.com/t4t5/sweetalert.git",
   "_target": "~0.3.1",
-  "_originalSource": "sweetalert",
-  "_direct": true
+  "_originalSource": "sweetalert"
 }
