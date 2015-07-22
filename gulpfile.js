@@ -47,6 +47,7 @@ gulp.task('watch', function() {
   // Watch .scss files
   // Watch .js files
   // Watch .html files and posts
+  gulp.watch(['css/**/*'], ['jekyll-rebuild']);
   gulp.watch(['index.html', '_includes/*.html', '_layouts/*.html', '*.md', '_posts/*'], ['jekyll-rebuild']);
 });
 

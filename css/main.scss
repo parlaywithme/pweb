@@ -1,10 +1,15 @@
 ---
 # This is the Front Matter block
 ---
+
+@import "bourbon/bourbon";
+@import "neat/neat";
 @import 'partials/global';
 @import 'utils/mixins';
+@import 'partials/variables';
 
 //Go imports!
+@import 'partials/typography';
 @import 'partials/header';
 @import 'partials/cover';
 @import 'partials/general-nav';

@@ -1,7 +1,8 @@
-html *{
-  box-sizing: border-box;
+*{
+  border: 1px dashed pink;
 }
 
-img{
-  width:100%;
+html,body{
+  margin: 0;
+  padding: 0;
 }
