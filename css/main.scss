@@ -1,9 +1,12 @@
 ---
 # This is the Front Matter block
 ---
+@import 'partials/global';
+@import 'utils/mixins';
 
 //Go imports!
 @import 'partials/header';
+@import 'partials/cover';
 @import 'partials/general-nav';
 @import 'partials/footer';
 @import 'partials/logo';
