@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<core-drawer-panel>
+<paper-drawer-panel>
 
   <div drawer id="drawer-panel" class="shadow">
     <!-- <header class="on-top"> -->
@@ -109,7 +109,9 @@ layout: default
 
   <div main id="full-page">
     <header id="page-top-navbar" class="shadow">
-      <core-icon-button icon="menu" core-drawer-toggle></core-icon-button>
+      <paper-icon-button icon="menu" paper-drawer-toggle>
+      </paper-icon-button>
+      
       <a href="/" class="logo">
 	<h1 class="logo">parlay</h1>
 
@@ -159,4 +161,4 @@ layout: default
       {{ content }}
     </main>
 
-    <!-- end of the div main and core-drawer-panel found in footer.html - important to put those tags on the same page if the organization changes  -->
+    <!-- end of the div main and paper-drawer-panel found in footer.html - important to put those tags on the same page if the organization changes  -->

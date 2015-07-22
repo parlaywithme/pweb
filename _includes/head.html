@@ -46,22 +46,32 @@
   <meta name="msapplication-TileImage" content="/favicon-144.png">
   <meta name="msapplication-config" content="/browserconfig.xml">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <script type="text/javascript"
+          src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+          async></script>
+                                                                          
+  <link href="/main.css"
+        rel="stylesheet"
+        type="text/css">
+  <script type="text/javascript"
+          src="/main.js"
+          async></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.7/webcomponents.min.js"></script>
 
-  <link href="/main.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" async></script>
-  <script type="text/javascript" src="/main.js" async></script>
+  <!-- needed b/c of https://github.com/PolymerElements/iron-icon/issues/19 -->
+  <link rel="import"
+        href="/bower_components/iron-icons/iron-icons.html">
 
+  <link rel="import"
+        href="/bower_components/paper-icon-button/paper-icon-button.html">
+  <link rel="import"
+        href="/bower_components/paper-drawer-panel/paper-drawer-panel.html">
+  <link rel="stylesheet"
+        href="/bower_components/paper-drawer-panel/paper-drawer-panel.css">
 
-  <!-- polymer imports -->
-  <link rel="import" href="/bower_components/core-drawer-panel/core-drawer-panel.html">
-  <link rel="stylesheet" href="/bower_components/core-drawer-panel/core-drawer-panel.css">
-
-  <!-- icon set -->
-  <link rel="import" href="/bower_components/core-icon-button/core-icon-button.html">
-
-  <!-- polymer js -->
-  <script src="/bower_components/webcomponentsjs/webcomponents.js"></script>
 
   <!-- google analytics -->
   <script>

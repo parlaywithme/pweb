@@ -42,7 +42,7 @@ document.addEventListener "DOMContentLoaded", (event) ->
     names = ['loren','sidney','joint']
     for name in names
       do (name) ->
-        l 'for', name
+        # l 'for', name
         img = $('#' + name)
         img.mouseenter ->
           img.attr('src', "/images/" + name + "_alt.gif")
@@ -50,7 +50,7 @@ document.addEventListener "DOMContentLoaded", (event) ->
           img.attr('src', "/images/" + name + ".jpg")
 
         img.click ->
-          l 'click', name
+          # l 'click', name
           alt = name + '_alt'
           if window[alt]
             img.attr('src', "/images/" + name + ".jpg")

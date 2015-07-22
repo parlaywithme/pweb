@@ -74,12 +74,12 @@ header > a {
     clear: both;
 }
 
-#page-top-navbar > core-icon-button {
+#page-top-navbar > paper-icon-button {
     float: left;
     color: white;
 }
 
-#page-top-navbar > core-icon-button {
+#page-top-navbar > paper-icon-button {
     height: 30px;
     width: 30px;
     padding: 0;
