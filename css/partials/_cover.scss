@@ -8,7 +8,7 @@
     background-image: linear-gradient(-166deg, #60E16D 1%, #10C09E 87%);
     min-height:740px;
     overflow: hidden;
-    padding: 0 .3 5em;
+    padding: 0 .8em;
     @media (min-width: $screen-sm-min){
       padding: 0;
       max-height: 85vh;
@@ -64,21 +64,4 @@
 }
 
 
-.under-dev{
-  font-weight: 200;
-}
 
-.download-links{
-  @include span-columns(12);
-
-  .disabled img { //Diasabled style until available in the apppp stores
-    opacity: .3 
-  }
-
-  img{
-    @include span-columns(6);
-    padding: 0 .6em;
-  }
-
-
-}

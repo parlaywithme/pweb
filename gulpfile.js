@@ -32,6 +32,12 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('./'));
 });
 
+gulp.task('component-styles', function(){
+  return gulp.src(['./_includes/**/*.scss'])
+    .pipe(concat('components.scss'))
+    .pipe(gulp.dest('./css'));
+})
+
 gulp.task('browser-sync',['jekyll-build'], function() {
     browserSync.init({
         proxy: "localhost:4000"
@@ -39,14 +45,11 @@ gulp.task('browser-sync',['jekyll-build'], function() {
 });
 
 gulp.task('watch', function() {
-  // Watch .scss files
-  // Watch .js files
   gulp.watch(['./_includes/**/*.js', './main.js'], ['scripts','jekyll-rebuild']);
-  // Watch .html files and posts
-  gulp.watch(['css/**/*'], ['jekyll-rebuild']);
+  gulp.watch(['css/**/*', '_includes/**/*.scss'], ['component-styles','jekyll-rebuild']);
   gulp.watch(['index.html', '_includes/*.html','_includes/**/*.html', '_layouts/*.html', '*.md', '_posts/*'], ['jekyll-rebuild']);
 });
 
 
 
-gulp.task('default',['scripts','browser-sync','watch']);
+gulp.task('default',['component-styles','scripts','browser-sync','watch']);

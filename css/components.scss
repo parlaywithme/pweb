@@ -1,0 +1,18 @@
+.under-dev{
+  font-weight: 200;
+}
+
+.download-links{
+  @include span-columns(12);
+
+  .disabled img { //Diasabled style until available in the apppp stores
+    opacity: .3 
+  }
+
+  img{
+    @include span-columns(6);
+    padding: 0 .6em;
+  }
+
+
+}
