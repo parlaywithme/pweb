@@ -7,11 +7,13 @@
 @import 'partials/global';
 @import 'utils/mixins';
 @import 'partials/variables';
+@import 'components';
 
 //Go imports!
 @import 'partials/typography';
+@import 'partials/general-nav';
 @import 'partials/header';
 @import 'partials/cover';
-@import 'partials/general-nav';
+@import 'partials/example-lists';
 @import 'partials/footer';
 @import 'partials/logo';
