@@ -1,46 +1,84 @@
+//TODO for dev—Remove
+// *{
+// border: 1px dashed pink;
+// }
+//
+
 #landing-cover{
     background-image: linear-gradient(-166deg, #60E16D 1%, #10C09E 87%);
-    height: 85vh;
+    min-height:740px;
     overflow: hidden;
+    padding: 0 .3 5em;
+    @media (min-width: $screen-sm-min){
+      padding: 0;
+      max-height: 85vh;
+    }
 }
 
 .landing-content{
   @include outer-container;
-  padding: 10vh 0;
+  padding: 15vh 0;
 }
 
 #landing-img{
-  @include span-columns(6);
-  padding: 0 2em;
+  @include span-columns(12);
+  display: none;
+
+  @media (min-width: $screen-sm-min){
+    display: block;
+    @include span-columns(6);
+    padding: 1em 2em 0;
+  }
 
   img {
     @include size(20vw, auto);
     width: 100%;
+    @media (min-width: $screen-sm-min){
+      // @include size(20vw, auto);
+    }
   }
 }
 
 .cover-text{
-  @include span-columns(5);
-  @include shift(1);
+  @include span-columns(12);
+  
+    @media (min-width: $screen-sm-min){
+      @include span-columns(5);
+      @include shift(1);
+    }
 
   h1{
     color: $white;
     letter-spacing: .25px;
+    font-size: 32px;
+    line-height: 1.1;
+    margin: 0;
+    @media (min-width: $screen-sm-min){
     font-size: 58px;
-    line-height: 72px;
+    }
   }
+
+  .emoji {
+    @include size(26px,26px);
+  }
+}
+
+
+.under-dev{
+  font-weight: 200;
 }
 
 .download-links{
   @include span-columns(12);
 
-  
+  .disabled img { //Diasabled style until available in the apppp stores
+    opacity: .3 
+  }
+
   img{
     @include span-columns(6);
     padding: 0 .6em;
-
-    &.disabled { //Diasabled style until available in the apppp stores
-      opacity: .3 
-    }
   }
+
+
 }

@@ -21,14 +21,14 @@ title:  "Parlay with Friends"
           you predict something and your friend says you’re wrong. and at the end, whoever loses may decide to give the winner a gift <img class="emoji" src="images/emoji/moneybag.png" title=":moneybag:" alt=":moneybag:" align="absmiddle"></img>... ’cause, you know, respect <img class="emoji" src="images/emoji/facepunch.png" title=":facepunch:" alt=":facepunch:" align="absmiddle"></img> 
         </p>
 
-        <h2 id="underdev">Currently under development.</h2>
+        <h5 class="centered under-dev">Currently under development.</h5>
         <div class="download-links">
           <!-- <a href="https://itunes.apple.com/us/app/"> -->
-          <a class="disabled">
+          <a id="appstoreBtn" class="disabled">
             <img src="/apple_store.png">
           </a>
           <!-- <a href="https://play.google.com/store/apps/details?id=com.parlay"> -->
-          <a class="disabled">
+          <a id="playstoreBtn" class="disabled">
             <img src="/play_store.png">
           </a>
         </div>
@@ -36,6 +36,9 @@ title:  "Parlay with Friends"
     </div>
   </section>
 
+<section class="example-lists">
+  
+</section>
 
 
 
@@ -47,4 +50,35 @@ title:  "Parlay with Friends"
     -->
   </main>
 
+<script>
+
+var playstoreBtn = document.getElementById('playstoreBtn');
+var appstoreBtn = document.getElementById('appstoreBtn');
+
+if(getMobileOperatingSystem() === 'iOS'){
+  playstoreBtn.remove();
+}else if(getMobileOperatingSystem() === 'Android'){
+  appstoreBtn.remove();
+}
+
+
+function getMobileOperatingSystem() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+  if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
+  {
+    return 'iOS';
+  }
+  else if( userAgent.match( /Android/i ) )
+  {
+    return 'Android';
+  }
+  else
+  {
+    return 'unknown';
+  }
+}
+
+
+</script>
 

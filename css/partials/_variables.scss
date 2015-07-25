@@ -2,3 +2,16 @@
 $white: #f1f1f1;
 $black: #222222;
 $green: #16D64B;
+
+// Breakpoints
+$screen-sm: 415px;
+$screen-md: 768px;
+
+$screen-sm: $screen-sm !default;
+$screen-md: $screen-md !default;
+
+$screen-sm-min: ($screen-sm ) !default;
+$screen-md-min: ($screen-md ) !default;
+
+$screen-sm-max: ($screen-sm - 1) !default;
+$screen-md-max: ($screen-md - 1) !default;
