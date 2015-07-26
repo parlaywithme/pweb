@@ -41,37 +41,3 @@ nav {
         }
     }
 }
-
-// /* doesn't get overrideen properly by #bottom-nav justify center in chrome */
-// nav:not(#bottom-nav) {
-//     justify-content: space-around;
-//     -webkit-justify-content: space-around;
-// }
-
-// #bottom-nav {
-//     justify-content: center;
-//     -webkit-justify-content: center;
-// }
-
-// #bottom-nav > a {
-//     margin: 0 70px;
-// }
-
-// nav {
-//     font-size: 20px;
-// }
-
-// nav:not(#bottom-nav) > a {
-//     flex-grow: 1;
-//     -webkit-flex-grow: 1;
-//     padding: 3px 0 0;
-// }
-
-// header > nav {
-//     width: 90%;
-//     margin-left: 5%;
-// }
-
-// nav a:not(.logo):not(.signin) {
-//     padding: 25px 0;
-// }
