@@ -1,4 +1,12 @@
 <div class="product-demo">
-<p>hello world</p>
-  
+
+    <ul class="screen-images">
+      {% for screenshot in site.data.product-demo  %}
+        <li>
+          <h4>{{ screenshot.title }}</h4>
+          <img src="assets/screenshots/{{ screenshot.image }}.png" alt="parlay app image {{ screenshot.image }}">
+        </li>
+      {% endfor %}
+    </ul>
+
 </div>

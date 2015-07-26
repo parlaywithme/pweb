@@ -6,4 +6,27 @@
 }
 .product-demo{
   @include outer-container;
+  margin-top: 1.8em;
+}
+
+.screen-images{
+  display: flex;
+  padding: 0;
+
+  li {
+    @include span-columns(3);
+    height: 100%;
+    color: $white;
+
+    h4 {
+      @include span-columns(12);
+      text-align: center;
+
+    }
+
+    img {
+      width: 100%;
+      padding: 0 0.6em;
+    }
+  }
 }
