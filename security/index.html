@@ -25,8 +25,23 @@ current: security
     <li>
       Continuous security patching.
     </li>
+    <!-- <li> -->
+    <!--   Continuous security monitoring from <a href="https://detectify.com/">Detectify</a>. -->
+    <!-- </li> -->
     <li>
-      Continuous security monitoring from <a href="https://detectify.com/">Detectify</a>.
+      Force HTTPS connections to our server in order to secure your data over the wire.
+    </li>
+    <li>
+      Client-side password hashing with bcrypt: our servers never see your password.
+    </li>
+    <li>
+      Sanitize all user-provided data before putting it in the DOM (XSS).
+    </li>
+    <li>
+      Use localStorage instead of session cookies (CSRF).
+    </li>
+    <li>
+      Use X-Frame-Options headers and content security policy directives.
     </li>
     <li>
       Continuous database balance sanity checks. We will not be another MtGox.
@@ -44,22 +59,10 @@ current: security
       Cycle API keys.
     </li>
     <li>
-      Force HTTPS connections to our server in order to secure your data over the wire.
-    </li>
-    <li>
-      Client-side password hashing with bcrypt: our servers never see your password.
-    </li>
-    <li>
-      Sanitize all user-provided data before putting it in the DOM (XSS).
-    </li>
-    <li>
-      Use localStorage instead of session cookies (CSRF).
-    </li>
-    <li>
-      Use X-Frame-Options headers and content security policy directives.
-    </li>
-    <li>
       Meteor methods with thoroughly checked arguments and user authority in lieu of complex allow/deny rules.
+    </li>
+    <li>
+      Audit logs.
     </li>
   </ul>
 
@@ -82,7 +85,10 @@ current: security
       TOCTOU and race conditions
     </li>
     <li>
-      Number processing, including conversion, rounding, and overflows
+      Number processing, including conversion, rounding, and
+      <a href="https://www.reddit.com/r/Buttcoin/comments/33u8vq/holy_satoshi_butter_pays_85btc_transaction_fees/cqofrit">
+        overflows
+      </a>
     </li>
     <li>
       Private data exposure

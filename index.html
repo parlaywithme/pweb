@@ -64,7 +64,12 @@ title:  "Parlay with Friends"
     </div>
 
     <div id="landing-text">
-      <h1 class="headline">parlay with your friends</h1>
+
+      <h1 class="headline"
+          id="index-headline">
+        parlay with your friends
+      </h1>
+
       <h2>uh... what’s a parlay<img class="emoji" src="images/emoji/interrobang.png" title=":interrobang:" alt=":interrobang:" align="absmiddle"></img></h2> 
       <h3>it's a prediction.</h3> 
 
@@ -72,7 +77,14 @@ title:  "Parlay with Friends"
         you predict something and your friend says you’re wrong. and at the end, whoever loses may decide to give the winner a gift <img class="emoji" src="images/emoji/moneybag.png" title=":moneybag:" alt=":moneybag:" align="absmiddle"></img>... ’cause, you know, respect <img class="emoji" src="images/emoji/facepunch.png" title=":facepunch:" alt=":facepunch:" align="absmiddle"></img> 
       </p>
 
-      <h2 id="underdev">Currently under development.</h2>
+      <div class="linkTextingWidget">
+        <div class="linkTextingInner">
+          <input type="hidden" class="linkID" value="1f4239d8-4651-4e0f-b723-48f04d2b6583">
+          <input class="linkTextingInput" type="tel" id="numberToText_linkTexting"></input>
+          <button class="linkTextingButton" type="button" id="sendButton_linkTexting">Text me a link</button>
+          <div class="linkTextingError" id="linkTextingError" style="display:none;"></div>
+        </div>
+      </div>
 
       <ul id="ideas">
         <li>
@@ -231,12 +243,12 @@ title:  "Parlay with Friends"
 
 
   <section class="download-links">
-    <!-- <a href="https://itunes.apple.com/us/app/"> -->
-    <a>
+    <a href="https://itunes.apple.com/us/app/parlay-challenge-your-friends/id944337527?mt=8"
+       id="apple-store">
       <img src="/apple_store.png">
     </a>
-    <!-- <a href="https://play.google.com/store/apps/details?id=com.parlay"> -->
-    <a>
+    <a href="http://play.google.com/store/apps/details?id=me.parlaywith.parlay"
+       id="play-store">
       <img src="/play_store.png">
     </a>
   </section>
@@ -370,8 +382,8 @@ title:  "Parlay with Friends"
 
 </main>
 
-<link href="/bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="/bower_components/sweetalert/dist/sweetalert.min.js" async></script>
+<!-- <link href="/bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet" type="text/css"> -->
+<!-- <script type="text/javascript" src="/bower_components/sweetalert/dist/sweetalert.min.js" async></script> -->
 
 <nav id="bottom-nav">
   <a href="/legal/">Legal</a>
@@ -379,3 +391,10 @@ title:  "Parlay with Friends"
   <a href="/support/">Support</a>
   <a href="/security/">Security</a>
 </nav>
+
+<script type="text/javascript">
+  var linkTextingDefaultCountry = "us";
+  var linkTextingPreferredCountries = ["us", "gb"];
+  var linkTextingOnlyCountries = ["af","al","dz","as","ad","ao","ai","ag","ar","am","aw","au","at","az","bs","bh","bd","bb","by","be","bz","bj","bm","bt","bo","ba","bw","br","io","vg","bn","bg","bf","bi","kh","cm","ca","cv","bq","ky","cf","td","cl","cn","co","km","cd","cg","ck","cr","ci","hr","cu","cw","cy","cz","dk","dj","dm","do","ec","eg","sv","gq","er","ee","et","fk","fo","fj","fi","fr","gf","pf","ga","gm","ge","de","gh","gi","gr","gl","gd","gp","gu","gt","gn","gw","gy","ht","hn","hk","hu","is","in","id","ir","iq","ie","il","it","jm","jp","jo","kz","ke","ki","kw","kg","la","lv","lb","ls","lr","ly","li","lt","lu","mo","mk","mg","mw","my","mv","ml","mt","mh","mq","mr","mu","mx","fm","md","mc","mn","me","ms","ma","mz","mm","na","nr","np","nl","nc","nz","ni","ne","ng","nu","nf","kp","mp","no","om","pk","pw","ps","pa","pg","py","pe","ph","pl","pt","pr","qa","re","ro","ru","rw","bl","sh","kn","lc","mf","pm","vc","ws","sm","st","sa","sn","rs","sc","sl","sg","sx","sk","si","sb","so","za","kr","ss","es","lk","sd","sr","sz","se","ch","sy","tw","tj","tz","th","tl","tg","tk","to","tt","tn","tr","tm","tc","tv","vi","ug","ua","ae","gb","us","uy","uz","vu","va","ve","vn","wf","ye","zm","zw"];
+</script>
+<script type="text/javascript" src="//d3q6uu7asevdsg.cloudfront.net/1.3/js/link_texting.min.js"></script>

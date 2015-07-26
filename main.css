@@ -415,7 +415,6 @@ h4 {
 }
 
 .download-links > a {
-    opacity: 0.2;
     margin: 0 10px;
 }
 
@@ -631,9 +630,8 @@ p.support {
     height: 500px;
 }
 
-#underdev {
-    margin: 60px 0;
-    text-align: center;
+.linkTextingButton {
+    background: #2ecc40;
 }
 
 #iphone {
