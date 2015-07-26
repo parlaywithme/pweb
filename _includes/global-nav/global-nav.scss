@@ -1,0 +1,77 @@
+
+// /* general navbar */
+// TODO: Use Autoprefix! 
+
+nav {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: .25em;
+
+    display: flex;    display: -webkit-flex;
+    flex-wrap: wrap;    -webkit-flex-wrap: wrap;
+    align-items: center;    -webkit-align-items: center;
+    align-content: center;    -webkit-align-content: center;
+    justify-content: center;    -webkit-justify-content: center;
+    
+    @media (min-width: $screen-sm-max){
+        justify-content: space-between;    -webkit-justify-content: space-between;
+        padding: .5em 0;
+    }
+
+
+    a {
+        text-decoration: none;
+        color: $white;   
+    }
+
+    ul {
+        list-style: none;
+        margin: 0; padding: 0;
+        display: flex; display: -webkit-felx;
+
+        li {
+            padding: 0 .5em;
+        }
+    }
+
+    .logo{
+        @media (min-width: $screen-sm-max){
+            width: 130px;
+            img{width: 100%;}
+        }
+    }
+}
+
+// /* doesn't get overrideen properly by #bottom-nav justify center in chrome */
+// nav:not(#bottom-nav) {
+//     justify-content: space-around;
+//     -webkit-justify-content: space-around;
+// }
+
+// #bottom-nav {
+//     justify-content: center;
+//     -webkit-justify-content: center;
+// }
+
+// #bottom-nav > a {
+//     margin: 0 70px;
+// }
+
+// nav {
+//     font-size: 20px;
+// }
+
+// nav:not(#bottom-nav) > a {
+//     flex-grow: 1;
+//     -webkit-flex-grow: 1;
+//     padding: 3px 0 0;
+// }
+
+// header > nav {
+//     width: 90%;
+//     margin-left: 5%;
+// }
+
+// nav a:not(.logo):not(.signin) {
+//     padding: 25px 0;
+// }

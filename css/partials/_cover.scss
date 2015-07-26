@@ -1,8 +1,8 @@
-//TODO for dev—Remove
-// *{
-// border: 1px dashed pink;
-// }
-//
+// TODO for dev—Remove
+*{
+border: 1px dashed pink;
+}
+
 
 #landing-cover{
     background-image: linear-gradient(-166deg, #60E16D 1%, #10C09E 60%);
@@ -18,7 +18,10 @@
 
 .landing-content{
   @include outer-container;
-  padding: 15vh 0;
+    padding: 6vh 0;
+  @media (min-width: $screen-sm-min){
+    padding: 15vh 0;
+  }
 }
 
 #landing-img{
@@ -51,7 +54,7 @@
   h1{
     color: $white;
     letter-spacing: .25px;
-    font-size: 3em;
+    font-size: 2.4em;
     line-height: 1.1;
     margin: 0;
     @media (min-width: $screen-sm-min){

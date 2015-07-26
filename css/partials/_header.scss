@@ -1,58 +1,58 @@
-/* header */
+// /* header */
 
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+// header {
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+// }
 
-header.on-top {
-    background-color: white;
-}
+// header.on-top {
+//     background-color: white;
+// }
 
-header > a {
-    padding: 25px 40px;
-}
+// header > a {
+//     padding: 25px 40px;
+// }
 
-#page-top-navbar {
-    width: 100%;
-    height: 50px;
-    position: fixed;
-    background-color: #2ecc40;
-    display: none;
-    clear: both;
-}
+// #page-top-navbar {
+//     width: 100%;
+//     height: 50px;
+//     position: fixed;
+//     background-color: #2ecc40;
+//     display: none;
+//     clear: both;
+// }
 
-#page-top-navbar > core-icon-button {
-    float: left;
-    color: white;
-}
+// #page-top-navbar > core-icon-button {
+//     float: left;
+//     color: white;
+// }
 
-#page-top-navbar > core-icon-button {
-    height: 30px;
-    width: 30px;
-    padding: 0;
-    margin: 12px;
-}
+// #page-top-navbar > core-icon-button {
+//     height: 30px;
+//     width: 30px;
+//     padding: 0;
+//     margin: 12px;
+// }
 
-/* TODO OMG it's impossible to center this thing. tried all these methods: */
-/* http://css-tricks.com/centering-css-complete-guide/ */
-#page-top-navbar > a.logo {
-    float: left;
-    color: white;
-    padding: 0;
-    margin: 8px 0 0 90px;
-}
+// /* TODO OMG it's impossible to center this thing. tried all these methods: */
+// /* http://css-tricks.com/centering-css-complete-guide/ */
+// #page-top-navbar > a.logo {
+//     float: left;
+//     color: white;
+//     padding: 0;
+//     margin: 8px 0 0 90px;
+// }
 
-#page-top-navbar h1 {
-    display: inline-block;
-    position: relative;
-    top: -5px;
-    margin-right: 10px;
-}
+// #page-top-navbar h1 {
+//     display: inline-block;
+//     position: relative;
+//     top: -5px;
+//     margin-right: 10px;
+// }
 
-svg#page-logo * {
-    display: inline-block;
-    fill: white;
-}
+// svg#page-logo * {
+//     display: inline-block;
+//     fill: white;
+// }
 
