@@ -5,20 +5,19 @@ border: 1px dashed pink;
 
 
 #landing-cover{
-    background-image: linear-gradient(-166deg, #60E16D 1%, #10C09E 60%);
-    min-height:740px;
-    overflow: hidden;
-    padding: 0 .8em;
-    @media (min-width: $screen-sm-min){
-      background-image: linear-gradient(-166deg, #60E16D 1%, #10C09E 87%);
-      padding: 0;
-      max-height: 85vh;
-    }
+  @include gradient-bg;
+  min-height:740px;
+  overflow: hidden;
+  padding: 0 .8em;
+  @media (min-width: $screen-sm-min){
+    padding: 0;
+    max-height: 85vh;
+  }
 }
 
 .landing-content{
   @include outer-container;
-    padding: 6vh 0;
+  padding: 6vh 0;
   @media (min-width: $screen-sm-min){
     padding: 15vh 0;
   }

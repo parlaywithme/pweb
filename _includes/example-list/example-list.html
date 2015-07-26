@@ -1,18 +1,21 @@
-{% for example in site.data.examples  %}
-  
+<h3 class="centered">Make a prediction for anything</h3>
+
 <ul id="example-list">
-  <li>
-  {% if example.multi-emoji  %}
-    <div class="multi-emoji">
-      {% for emoji in example.multi-emoji %}
-        <img src="images/emoji/{{emoji}}.png" alt="">
-      {% endfor %}
-  </div>
-  {% else %}  
-        <img src="images/emoji/{{example.emoji}}.png" alt="">
-  {% endif %}
-    <h4>{{ example.title }}</h4>
-    <p>{{ example.description }}</p>
-  </li>
+  {% for example in site.data.examples  %}
+    <li>
+    {% if example.multi-emoji  %}
+      <div class="multi-emoji">
+        {% for emoji in example.multi-emoji %}
+          <img src="images/emoji/{{emoji}}.png" alt="">
+        {% endfor %}
+    </div>
+    {% else %}  
+          <img src="images/emoji/{{example.emoji}}.png" alt="">
+    {% endif %}
+      <h4>{{ example.title }}</h4>
+      <p>{{ example.description }}</p>
+    </li>
+  {% endfor %}
 </ul>
-{% endfor %}
+
+<h4 id="expand-link">Show more examples</h4>

@@ -2,3 +2,15 @@
   width: $width;
   height: $height;
 }
+
+@mixin max-width(){
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+@mixin gradient-bg{
+  background-image: linear-gradient(-166deg, #60E16D 1%, #10C09E 60%);
+  @media (min-width: $screen-sm-min){
+    background-image: linear-gradient(-166deg, #60E16D 1%, #10C09E 87%);
+  }
+}
