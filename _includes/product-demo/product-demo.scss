@@ -1,0 +1,9 @@
+#product{
+  @include gradient-bg;
+  min-height: 85vh;
+  margin-top: 1.8em;
+
+}
+.product-demo{
+  @include outer-container;
+}
