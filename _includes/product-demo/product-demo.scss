@@ -1,12 +1,11 @@
 #product{
   @include gradient-bg;
-  min-height: 85vh;
+  padding: 6em 0;
   margin-top: 1.8em;
 
 }
 .product-demo{
   @include outer-container;
-  margin-top: 1.8em;
 }
 
 .screen-images{
