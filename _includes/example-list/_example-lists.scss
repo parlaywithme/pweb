@@ -8,15 +8,15 @@
 }
 
 #example-list {
-  display: flex; display: -webkit-flex;
-  flex-wrap: wrap; -webkit-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   padding:0;
   text-align: center;
 
   li {
     @include span-columns(12);
     margin-top: 1.8em;
-    transition: all .2s ease-in-out; -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
     height: auto;
     @media (min-width: $screen-sm-min){
       @include span-columns(3);
@@ -62,7 +62,7 @@
   padding: .5em 0;
   text-align: center;
   position: relative;
-  // z-index: 1;
+  z-index: 1;
 
   &:hover{
     color: darken($green, 10%);

@@ -1,20 +1,19 @@
 
 // /* general navbar */
-// TODO: Use Autoprefix! 
 
 nav {
     max-width: $max-width;
     margin: 0 auto;
     padding: .25em;
 
-    display: flex;    display: -webkit-flex;
-    flex-wrap: wrap;    -webkit-flex-wrap: wrap;
-    align-items: center;    -webkit-align-items: center;
-    align-content: center;    -webkit-align-content: center;
-    justify-content: center;    -webkit-justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     
     @media (min-width: $screen-sm-max){
-        justify-content: space-between;    -webkit-justify-content: space-between;
+        justify-content: space-between;
         padding: .5em 0;
     }
 
@@ -27,7 +26,7 @@ nav {
     ul {
         list-style: none;
         margin: 0; padding: 0;
-        display: flex; display: -webkit-felx;
+        display: flex;
 
         li {
             padding: 0 .5em;

@@ -6,7 +6,7 @@
 .download-links{
   @include span-columns(12);
 
-  .disabled img { //Diasabled style until available in the apppp stores
+  .disabled img { 
     opacity: .3 
   }
 
