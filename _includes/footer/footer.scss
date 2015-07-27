@@ -5,13 +5,19 @@ footer {
     text-align: center;
     color: $gray;
     margin-bottom: 1em;
+    font-size: .875em;
     
     svg {
-        @include size(24px, 24px);
+        @include size(18px, 18px);
     }
-
+    #social {margin-bottom:.5em;}
     #social * {
         fill: $gray;
+    }
+
+    #social a {
+        padding: 13px;
+        margin-bottom: .4em;
     }
 
     a {
@@ -24,13 +30,13 @@ footer {
 }
 
 hr.separator {
-    width: 30vw;
-    margin: 6em auto 2.5em;
+    width: 10vw;
+    margin: 3em auto 1.2em;
 }
 
 
 #social > a {
-    margin: 0 20px;
+    margin: 0 18px;
 }
 
 .bottom-nav{
