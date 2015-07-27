@@ -2,6 +2,7 @@
 # This is the Front Matter block
 ---
 
+//Go imports!
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import 'partials/global';
@@ -9,9 +10,5 @@
 @import 'partials/variables';
 @import 'components';
 
-//Go imports!
 @import 'partials/typography';
-// @import 'partials/header';
 @import 'partials/cover';
-@import 'partials/footer';
-// @import 'partials/logo'; 

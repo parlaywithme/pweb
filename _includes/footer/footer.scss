@@ -1,0 +1,44 @@
+/* footer */
+
+footer {
+    @include outer-container;
+    text-align: center;
+    color: $gray;
+    margin-bottom: 1em;
+    
+    svg {
+        @include size(24px, 24px);
+    }
+
+    #social * {
+        fill: $gray;
+    }
+
+    a {
+        color: $pistol;
+    }
+
+    p, ul {
+        margin: .4em 0;
+    }
+}
+
+hr.separator {
+    width: 30vw;
+    margin: 6em auto 2.5em;
+}
+
+
+#social > a {
+    margin: 0 20px;
+}
+
+.bottom-nav{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+    a {
+        padding: .4em .8em;
+    }
+}

@@ -155,41 +155,7 @@ nav a:not(.logo):not(.signin) {
     padding: 25px 0;
 }
 
-/* footer */
 
-footer {
-    width: 100%;
-    height: 50px;
-    margin-top: 80px;
-    display: block;
-}
-
-#social * {
-    fill: #ccc;
-}
-
-#social > a {
-    margin: 0 20px;
-}
-
-#copyright {
-    padding-bottom: 100px; /* TODO needed because page doesn't scroll all the way to the bottom */
-}
-
-#copyright > a {
-    color: #aaaaaa;
-    font-weight: 400;
-}
-
-footer > p {
-    color: #aaaaaa;
-    font-weight: 200;
-    font-size: 14px;
-}
-
-nav + footer {
-    margin-top: 20px;
-}
 
 /* logo */
 
@@ -671,7 +637,6 @@ p.fee {
     	position: fixed;
     	left: 0;
     	z-index: 100;
-	padding-bottom: 80px; /* doesn't scroll down all the way (TODO why?), so this allows you to see copyright */
     }
 
     .subheading {
