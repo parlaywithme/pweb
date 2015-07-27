@@ -44,9 +44,6 @@ gulp.task('component-styles', function(){
 })
 
 gulp.task('browser-sync',['jekyll-build'], function() {
-    // browserSync.init({
-    //     proxy: "localhost:4000"
-    // });
     browserSync.init({
         server: {
             baseDir: '_site'
@@ -57,10 +54,10 @@ gulp.task('browser-sync',['jekyll-build'], function() {
 
 gulp.task('watch', function() {
   gulp.watch(['./_includes/**/*.js', './main.js'], ['scripts','jekyll-rebuild']);
-  gulp.watch(['css/**/*', '_includes/**/*.scss'], ['component-styles','jekyll-rebuild']);
+  gulp.watch(['css/**/*.scss', '_includes/**/*.scss'], ['component-styles','jekyll-rebuild']);
   gulp.watch(['index.html', '_includes/*.html','_includes/**/*.html', '_layouts/*.html', '*.md', '_posts/*'], ['jekyll-rebuild']);
 });
 
 
 
-gulp.task('default',['component-styles','scripts','jekyll-build', 'browser-sync','watch']);
+gulp.task('default',['scripts', 'component-styles', 'jekyll-build', 'browser-sync','watch']);

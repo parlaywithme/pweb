@@ -3,55 +3,36 @@
     <h3>Sidney</h3>
     <h3>Loren</h3>
   </div>
-  <div id="together">
-  }
-</div>
-<div id="last">
-  <h3>Sands-Ramshaw</h3>
-</div>
+  <div id="together">}</div>
+  <div id="last">
+    <h3>Sands-Ramshaw</h3>
+  </div>
 </div>
 
 <div id="team-hero" class="center">
   <img src="/images/joint.jpg" class="joint" id="joint">
 </div>
 
-
-<div class="bios">
-  <dl>
-    <dt>
-      <div class="title">CEO</div>
-      <img src="/images/sidney.jpg" class="head" id="sidney">
-    </dt>
-    <dd>
-      Sidney loves app design. Before Parlay she was an analyst at a <a href="https://www.novus.com">fintech startup</a>. Chinese BA, Dartmouth. After a lifetime of being right about one thing after another, Sidney started to have trouble finding friends to take the other side. There's got to be an app for that...
-      <p>#makingmorefriendswouldhavebeeneasier</p>
-      <p>
-        {% include svg/envelope.svg  %}
-        <a href="mailto:sidney@parlaywith.me">sidney@parlaywith.me</a>
-      </p>
-      <p>
-        {% include svg/twitter.svg  %}
-        <a href="https://twitter.com/sidneylsr">@sidneylsr</a>
-      </p>
-    </dd>
-    <dt>
-      <div class="title">
-        CTO
-      </div>
-      <img src="/images/loren.jpg" class="head" id="loren">
-    </dt>
-    <dd>
-      Loren loves code. He has made everything from a <a href="http://getferro.com">Chrome extension</a> to <a href="http://payo.us">mayonnaise</a>, has worked as a security engineer for the NSA, and is a recovering startup adviceaholic. Computer Science BA, Dartmouth. Spends his days traveling in place, typing and walking on a self-built vertical keyboard and treaddesk. 
-      <p>#hackercise</p>
-      <p>
-      {% include  svg/envelope.svg  %}
-        <a href="mailto:loren@parlaywith.me">loren@parlaywith.me</a>
-      </p>
-      <p>
-        {% include svg/twitter.svg  %}
-        <a href="https://twitter.com/lorendsr">@lorendsr</a>
-      </p>
-    </dd>
-  </dl>
+{% for member in site.data.team  %}
   
-</div>
+  <div class="bio">
+    <img src="/images/{{ member.image }}" class="head" id="{{ member.name }}">
+    <div class="title">{{ member.position }}</div>
+    <h2>{{ member.name }}</h2>
+    <p>{{ member.bio }}
+    </p>
+    <p>#{{ member.hashtag }}</p>
+    <ul class="contact-info">
+      <li>
+        {% include svg/envelope.svg  %}
+        <a href="mailto:{{ member.email }}">{{ member.email }}@parlaywith.me</a>
+      </li>
+      <li>
+        {% include svg/twitter.svg  %}
+        <a href="https://twitter.com/{{ member.twitter }}">@{{ member.twitter }}</a>
+      </li>
+    </ul>
+  </div>
+
+{% endfor %}
+

@@ -1,0 +1,17 @@
+---
+#team member list & info
+- name: sidney
+  position: CEO
+  email: sidney
+  image: sidney.jpg
+  twitter: sidneylsr
+  hashtag: "makingmorefriendswouldhavebeeneasier"
+  bio: "Sidney loves app design. Before Parlay she was an analyst at a <a href='https://www.novus.com'>fintech startup</a>. Chinese BA, Dartmouth. After a lifetime of being right about one thing after another, Sidney started to have trouble finding friends to take the other side. There's got to be an app for that..."#team member list & info
+
+- name: loren
+  position: CEO
+  email: loren
+  image: loren.jpg
+  twitter: lorendsr
+  hashtag: "hackercise"
+  bio: "Loren loves code. He has made everything from a <a href='http://getferro.com'>Chrome extension</a> to <a href='http://payo.us'>mayonnaise</a>, has worked as a security engineer for the NSA, and is a recovering startup adviceaholic. Computer Science BA, Dartmouth. Spends his days traveling in place, typing and walking on a self-built vertical keyboard and treaddesk."
