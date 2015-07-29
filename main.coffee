@@ -8,16 +8,29 @@ window.loren_alt = off
 window.joint_alt = off
 window.sidney_alt = off
 
-window.alert_dev = ->
-  swal "Not quite yet!", "Parlay is currently under development.", "warning"
+animate_ideas = ->
+  return unless window.location.pathname in ["/index.html", "/"]
+    
+  ideas = $('#ideas > li')
+  ul = $('#ideas')
+  ideas_top = $(ideas[0]).position().top
+  idea_i = 0
+  delta = 0
+  interval = setInterval ->
+    idea_i = (idea_i + 1) %% ideas.length
+    if idea_i is 0
+      delta = 0
+    else
+      next_top = $(ideas[idea_i]).position().top
+      delta += next_top - ideas_top
+    ul.animate 
+      scrollTop: delta
+    , 1500
+  , 5000
 
-window.onload = ->
-  links = document.querySelectorAll '.download-links > a'
-  if links.length is 0
-    return;
+  ul.on 'mousedown mousewheel touchstart', ->
+    clearInterval interval
 
-  links[0].onclick = alert_dev
-  links[1].onclick = alert_dev
 
 document.addEventListener "DOMContentLoaded", (event) ->
 
@@ -38,11 +51,11 @@ document.addEventListener "DOMContentLoaded", (event) ->
         drawer?.setAttribute 'drawerWidth', '100%'
     , 1000
 
-  if window.location.pathname in ["/team/index.html", "/team/"]
+  if window.location.pathname in ["/index.html", "/"]
     names = ['loren','sidney','joint']
     for name in names
       do (name) ->
-        l 'for', name
+        # l 'for', name
         img = $('#' + name)
         img.mouseenter ->
           img.attr('src', "/images/" + name + "_alt.gif")
@@ -50,7 +63,7 @@ document.addEventListener "DOMContentLoaded", (event) ->
           img.attr('src', "/images/" + name + ".jpg")
 
         img.click ->
-          l 'click', name
+          # l 'click', name
           alt = name + '_alt'
           if window[alt]
             img.attr('src', "/images/" + name + ".jpg")
@@ -61,25 +74,4 @@ document.addEventListener "DOMContentLoaded", (event) ->
             if n isnt name
               window["#{n}_alt"] = false
 
-  if window.location.pathname in ["/index.html", "/"]
-    ideas = $('#ideas > li')
-    ul = $('#ideas')
-    ideas_top = $(ideas[0]).position().top
-    idea_i = 0
-    delta = 0
-    interval = setInterval ->
-      idea_i = (idea_i + 1) %% ideas.length
-      if idea_i is 0
-        delta = 0
-      else
-        next_top = $(ideas[idea_i]).position().top
-        delta += next_top - ideas_top
-      ul.animate 
-        scrollTop: delta
-      , 1500
-    , 5000
-
-    ul.on 'mousedown mousewheel touchstart', ->
-      clearInterval interval
-    
-
+  # animate_ideas()

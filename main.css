@@ -13,6 +13,10 @@ body {
     height: 100%;
 }
 
+.linkTextingButton {
+    background: #2ecc40;
+}
+
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -74,12 +78,12 @@ header > a {
     clear: both;
 }
 
-#page-top-navbar > core-icon-button {
+#page-top-navbar > paper-icon-button {
     float: left;
     color: white;
 }
 
-#page-top-navbar > core-icon-button {
+#page-top-navbar > paper-icon-button {
     height: 30px;
     width: 30px;
     padding: 0;
@@ -468,8 +472,9 @@ ul.-inner {
 }
 
 ul.-basic {
-    margin-left: 15px;
+    margin-left: 30px;
     list-style-type: disc;
+    padding-right: 10px;
 }
 
 em.-bold {
@@ -481,6 +486,22 @@ em.-itbold {
     font-weight: 600;
 }
 
+
+/* security */
+
+.security {
+    padding: 0 10px;
+    text-align: left;
+}
+
+.security > h3 {
+    margin: 0 20% 30px;
+    text-align: center;
+}
+
+.security > ul > li {
+    margin-bottom: 10px;
+}
 
 /* product */
 
@@ -739,10 +760,6 @@ p.fee {
 
     h1 {
         font-size: 40px;
-    }
-
-    #underdev {
-        margin: 30px 0;
     }
 
     #ideas {
