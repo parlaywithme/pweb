@@ -14,10 +14,16 @@
     "tests"
   ],
   "dependencies": {
-    "sweetalert": "~0.3.1",
-    "polymer": "Polymer/polymer#~0.5.1",
+    "sweetalert": "~1",
+    "polymer": "Polymer/polymer#~1",
     "normalize.css": "~3.0.2",
-    "emojify.js": "~0.9.5",
-    "devices.css": "*"
+    "emojify.js": "~1",
+    "paper-icon-button": "PolymerElements/paper-icon-button#~1.0.3",
+    "paper-drawer-panel": "PolymerElements/paper-drawer-panel#~1.0.3",
+    "ua-parser-js": "~0.7.7"
+  },
+  "resolutions": {
+    "polymer": "~1",
+    "webcomponentsjs": "^0.7.2"
   }
 }

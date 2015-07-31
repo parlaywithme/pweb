@@ -74,12 +74,12 @@ header > a {
     clear: both;
 }
 
-#page-top-navbar > core-icon-button {
+#page-top-navbar > paper-icon-button {
     float: left;
     color: white;
 }
 
-#page-top-navbar > core-icon-button {
+#page-top-navbar > paper-icon-button {
     height: 30px;
     width: 30px;
     padding: 0;
@@ -415,7 +415,6 @@ h4 {
 }
 
 .download-links > a {
-    opacity: 0.2;
     margin: 0 10px;
 }
 
@@ -502,8 +501,9 @@ ul.-inner {
 }
 
 ul.-basic {
-    margin-left: 15px;
+    margin-left: 30px;
     list-style-type: disc;
+    padding-right: 10px;
 }
 
 em.-bold {
@@ -515,6 +515,21 @@ em.-itbold {
     font-weight: 600;
 }
 
+/* security */
+
+.security {
+    padding: 0 10px;
+    text-align: left;
+}
+
+.security > h3 {
+    margin: 0 20% 30px;
+    text-align: center;
+}
+
+.security > ul > li {
+    margin-bottom: 10px;
+}
 
 /* team */
 
@@ -615,9 +630,8 @@ p.support {
     height: 500px;
 }
 
-#underdev {
-    margin: 60px 0;
-    text-align: center;
+.linkTextingButton {
+    background: #2ecc40;
 }
 
 #iphone {

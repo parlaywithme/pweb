@@ -1,7 +1,7 @@
 {
   "name": "emojify.js",
-  "main": "emojify.js",
-  "version": "0.9.5",
+  "main": "dist/js/emojify.js",
+  "version": "1.0.5",
   "homepage": "https://github.com/hassankhan/emojify.js",
   "authors": [
     "Hassan Khan (hassankhan)"
@@ -12,18 +12,18 @@
   ],
   "license": "MIT",
   "ignore": [
+    "src",
     "**/.*",
     "node_modules",
     "tests"
   ],
-  "_release": "0.9.5",
+  "_release": "1.0.5",
   "_resolution": {
     "type": "version",
-    "tag": "0.9.5",
-    "commit": "e8a97a98d488ab832ea29d71a5de118e3b4dbf05"
+    "tag": "1.0.5",
+    "commit": "0abadbc4e576931ca2c3d9f7b9eff6e3c54f841c"
   },
   "_source": "git://github.com/hassankhan/emojify.js.git",
-  "_target": "~0.9.5",
-  "_originalSource": "emojify.js",
-  "_direct": true
+  "_target": "~1",
+  "_originalSource": "emojify.js"
 }

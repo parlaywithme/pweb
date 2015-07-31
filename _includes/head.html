@@ -1,47 +1,81 @@
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Type"
+        content="text/html; charset=UTF-8">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta name="keywords" content="Parlay, Friends, Parlay with Me, iPhone App, Android App">
-  <meta name="description" content="Parlay – See who's right. An app for challenging your friends.">
-  
-  <!-- <meta name="apple-itunes-app" content="app-id= app-argument="> todo -->
-  
-  <meta property="og:type" content="company">
-  <meta property="og:title" content="Parlay">
-  <meta property="og:url" content="http://facebook.com/parlaywithme">
-  <meta property="og:image" content="https://s3.amazonaws.com/parlay/parlay100.jpg"> <!-- todo -->
-  <meta property="og:site_name" content="Parlaywith.me">
-  <meta property="og:description" content="I'm challenging friends on Parlay."> <!-- todo copy -->
-  <!-- <meta property="og:app_id" content="todo"> -->
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="keywords"
+        content="Parlay, Parlay Friends, Parlay with Me, iPhone App, Android App, Challenge Friends">
+  <meta name="description"
+        content="Parlay – See who's right. Challenge your friends for 📷, charity, or 💰❗️">
 
+  <meta name="apple-itunes-app" content="app-id=944337527">
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="https://parlaywith.me">
-  <meta name="twitter:title" content="Parlay">
-  <meta name="twitter:description" content="I'm challenging friends on Parlay.">
-  <meta name="twitter:image" content="https://s3.amazonaws.com/parlay/parlay100.jpg">
+  <meta property="og:type"
+        content="website">
+  <meta property="og:title"
+        content="Parlay – Challenge your friends❗️">
+  <meta property="og:site_name"
+        content="Parlay – Challenge your friends❗️">
+  <meta property="og:description"
+        content="See who's right. Challenge your friends for 📷, charity, or 💰❗️">
+  <meta property="og:url"
+        content="http://parlaywith.me">
+
+  <meta property="og:image"
+        content="http://e.parlay.io/a/app_icon.png" />
+  <!-- <meta property="og:image:secure_url" -->
+  <!--       content="https://secure.example.com/ogp.jpg" /> -->
+  <meta property="og:image:type"
+        content="image/png" />
+  <meta property="og:image:width"
+        content="1024" />
+  <meta property="og:image:height"
+        content="1024" />
+
+  <meta property="fb:app_id" 
+        content="501604519940587">
+  
+  <meta name="twitter:card" 
+        content="app">
+  <meta name="twitter:site"
+        content="@parlaytheapp">
+  <meta name="twitter:description" 
+        content="Parlay – See who's right. Challenge your friends for 📷, charity, or 💰❗️">
+
+  <meta name="twitter:app:name:iphone" content="Parlay – Challenge your friends">
+  <meta name="twitter:app:id:iphone" content="944337527">
+  <meta name="twitter:app:url:iphone" content="parlay://">
+  <!-- <meta name="twitter:app:name:ipad" content="Cannonball"> -->
+  <!-- <meta name="twitter:app:id:ipad" content="929750075"> -->
+  <!-- <meta name="twitter:app:url:ipad" content="cannonball://poem/5149e249222f9e600a7540ef"> -->
+  <meta name="twitter:app:name:googleplay" content="Parlay – Challenge your friends">
+  <meta name="twitter:app:id:googleplay" content="me.parlaywith.parlay">
+  <meta name="twitter:app:url:googleplay" content="parlay://">
 
   <title>
-    {{ page.title }}
+    {{ page.title }}❗️
   </title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <script type="text/javascript"
+          src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+          async></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.7/webcomponents.min.js"></script>
+  <script type="text/javascript" src="/bower_components/ua-parser-js/dist/ua-parser.min.js" async></script>  
 
-  <link href="/main.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" async></script>
-  <script type="text/javascript" src="/main.js" async></script>
+  <!-- needed b/c of https://github.com/PolymerElements/iron-icon/issues/19 -->
+  <link rel="import"
+        href="/bower_components/iron-icons/iron-icons.html">
 
+  <link rel="import"
+        href="/bower_components/paper-icon-button/paper-icon-button.html">
+  <link rel="import"
+        href="/bower_components/paper-drawer-panel/paper-drawer-panel.html">
+  <link rel="stylesheet"
+        href="/bower_components/paper-drawer-panel/paper-drawer-panel.css">
 
-  <!-- polymer imports -->
-  <link rel="import" href="/bower_components/core-drawer-panel/core-drawer-panel.html">
-  <link rel="stylesheet" href="/bower_components/core-drawer-panel/core-drawer-panel.css">
-
-  <!-- icon set -->
-  <link rel="import" href="/bower_components/core-icon-button/core-icon-button.html">
-
-  <!-- polymer js -->
-  <script src="/bower_components/webcomponentsjs/webcomponents.js"></script>
 
   <!-- google analytics -->
   <script>
@@ -52,9 +86,16 @@
 
     ga('create', 'UA-53618501-2', 'auto');
     ga('send', 'pageview');
-
   </script>
 
+  <link rel="stylesheet" href="http://d3q6uu7asevdsg.cloudfront.net/1.3/css/link_texting.min.css">
+
+  <link href="/main.css"
+        rel="stylesheet"
+        type="text/css">
+  <script type="text/javascript"
+          src="/main.js"
+          async></script>
 </head>
 
 

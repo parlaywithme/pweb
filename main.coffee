@@ -8,17 +8,6 @@ window.loren_alt = off
 window.joint_alt = off
 window.sidney_alt = off
 
-window.alert_dev = ->
-  swal "Not quite yet!", "Parlay is currently under development.", "warning"
-
-window.onload = ->
-  links = document.querySelectorAll '.download-links > a'
-  if links.length is 0
-    return;
-
-  links[0].onclick = alert_dev
-  links[1].onclick = alert_dev
-
 document.addEventListener "DOMContentLoaded", (event) ->
 
   # emojify.setConfig({"only_crawl_id": "landing"});
@@ -38,11 +27,11 @@ document.addEventListener "DOMContentLoaded", (event) ->
         drawer?.setAttribute 'drawerWidth', '100%'
     , 1000
 
-  if window.location.pathname in ["/team/index.html", "/team/"]
+  if window.location.pathname in ["/index.html", "/"]
     names = ['loren','sidney','joint']
     for name in names
       do (name) ->
-        l 'for', name
+        # l 'for', name
         img = $('#' + name)
         img.mouseenter ->
           img.attr('src', "/images/" + name + "_alt.gif")
@@ -50,7 +39,7 @@ document.addEventListener "DOMContentLoaded", (event) ->
           img.attr('src', "/images/" + name + ".jpg")
 
         img.click ->
-          l 'click', name
+          # l 'click', name
           alt = name + '_alt'
           if window[alt]
             img.attr('src', "/images/" + name + ".jpg")
@@ -82,4 +71,13 @@ document.addEventListener "DOMContentLoaded", (event) ->
     ul.on 'mousedown mousewheel touchstart', ->
       clearInterval interval
     
+  ua = new UAParser
+  os = ua.getOS().name
+  if os in ['iOS', 'Android']
+    if os is 'Android'
+      $('#apple-store').hide()
+    else if os is 'iOS' 
+      $('#play-store').hide()
 
+    $('.linkTextingWidget').hide()
+    $('.download-links').insertBefore '#index-headline'
