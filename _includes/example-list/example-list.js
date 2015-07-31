@@ -2,6 +2,7 @@ var expandLink = document.getElementById('expand-link');
 var examples = document.getElementById('example-list');
 var events = ['click', 'touchend'];
 
+if(examples){
 for(event of events){
 
   expandLink.addEventListener(event, function(){
@@ -11,12 +12,11 @@ for(event of events){
     }else{
       expandLink.innerHTML = "Show more examples";
     }
-console.log('exfired');
-
   }, false);
 
 }
 
+}
 // window.addEventListener('touchend', function(){
 //   console.log('touched')
 // },false)

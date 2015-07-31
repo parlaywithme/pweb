@@ -1,0 +1,49 @@
+.legal * {
+  border: 1px dotted tomato;
+}
+.legal-wrapper{
+  @include outer-container;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media (min-width: $screen-sm-min){
+    flex-wrap: nowrap;
+  }
+
+}
+.legal-menu{
+
+    list-style: none;
+    padding: $gutter;
+    @media (min-width: $screen-sm-min){
+  
+
+  li {
+    display: inline-block;
+    padding: 1em;
+
+    &:hover{
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    &.active {
+      color:tomato;
+      background: plum;
+    }
+    @media (min-width: $screen-sm-min){
+      display: block;
+
+    }
+  }
+}
+
+}
+
+.legal-content{
+  p {
+    margin: 1.5em 0;
+    font-size: 1.2em;
+    line-height: 1.1;
+  }
+}

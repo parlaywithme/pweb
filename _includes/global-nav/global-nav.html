@@ -1,17 +1,34 @@
+
 <a href="/" class="logo">
-  <img src="assets/logo.png" alt="parlay logo - parlay home" class="">
+  <img src="{{ page.path }}assets/logo.png" alt="parlay logo - parlay home" class="">
 </a>
 
 <ul>
-  <li>
-    <a href="#product">Product</a>
-  </li>
-  <li>
-    <a href="#team">Team</a>
-  </li>
-  <li>
-    <a href="http://parlay.meteor.com/signin" class="signin">Sign in</a>
-  </li>
+  {% if page.navtype == interior %}
+    <li>
+      <a href="/signin" class="signin">About</a>
+    </li>
+    <li>
+      <a href="/signin" class="signin">Legal</a>
+    </li>
+    <li>
+      <a href="/signin" class="signin">Fees</a>
+    </li>
+    <li>
+      <a href="/signin" class="signin">Support</a>
+    </li>
+    {% else %}
+    <li>
+      <a href="#product">Product</a>
+    </li>
+    <li>
+      <a href="#team">Team</a>
+    </li>
+    <li>
+      <a href="http://parlay.meteor.com/signin" class="signin">Sign in</a>
+    </li>
+  {% endif %}
+
 </ul>
 
 

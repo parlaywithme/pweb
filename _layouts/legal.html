@@ -1,44 +1,35 @@
 ---
 layout: page
+current: legal
 ---
+<!-- The Legal page include
+About
+Terms
+Privacy
 
-<ul class="subheading">
-  <li>
-    {% if page.current == 'legal' %}
-    About
-    {% else %}
-    <a href="/legal/">
-      About
-    </a>
-    {% endif %}
-  </li>
-  <li>
-    {% if page.current == 'terms' %}
-    Terms
-    {% else %}
-    <a href="/terms/">
-      Terms
-    </a>
-    {% endif %}
-  </li>
-  <li>
-    {% if page.current == 'privacy' %}
-    Privacy
-    {% else %}
-    <a href="/privacy/">
-      Privacy
-    </a>
-    {% endif %}
-  </li>
-  <li>
-    {% if page.current == 'security' %}
-    Security
-    {% else %}
-    <a href="/security/">
-      Security
-    </a>
-    {% endif %}
-  </li>
-</ul>
+In Tabs -->
 
-{{ content }}
+<!-- For each section, make a tab -->
+<!-- would be nice if the content was included
+Make it a layout again
+ -->
+
+<!-- In the tab body
+ -->
+
+<div class="legal-wrapper">
+  <ul class="legal-menu">
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+  </ul>
+
+<div class="legal-content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem sapiente amet voluptate officiis est quos adipisci nobis, cupiditate natus repellat, minima doloremque culpa at.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem sapiente amet voluptate officiis est quos adipisci nobis, cupiditate natus repellat, minima doloremque culpa at.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem sapiente amet voluptate officiis est quos adipisci nobis, cupiditate natus repellat, minima doloremque culpa at.</p>
+</div>
+</div>
+
+
+
