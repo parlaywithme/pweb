@@ -4,12 +4,12 @@ Use branch gh-pages
 
 - Install server: `gem install jekyll`
 - Install Node/ npm
+- Install Bower: `npm install -g bower`
 - Install Gulp `npm install -g gulp`
 - Be sure to be in the project directory
-- Install dependencies: `npm install`
-- Run Gulp
-- Run local Jekyll server: `jekyll serve --watch`
-- Open [http://localhost:3000](http://localhost:3000)
+- Install dependencies: `npm install`, `bower install`
+- Run `gulp`
+- Open [http://localhost:3000](http://localhost:3000) *Will open automatically*
 
 
 ## Components

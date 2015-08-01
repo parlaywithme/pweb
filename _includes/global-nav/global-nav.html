@@ -1,10 +1,11 @@
 
 <a href="/" class="logo">
-  <img src="{{ page.path }}assets/logo.png" alt="parlay logo - parlay home" class="">
+  <!-- <img src="{{ page.path }}assets/logo.png" alt="parlay logo - parlay home" class=""> -->
+  {% include svg/logo.svg  %}
 </a>
 
 <ul>
-  {% if page.navtype == interior %}
+  {% if page.navtype == 'interior' %}
     <li>
       <a href="/signin" class="signin">About</a>
     </li>

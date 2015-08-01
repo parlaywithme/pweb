@@ -1,12 +1,6 @@
 
 // /* general navbar */
-.legal,
-.fees,
-.support{
-    nav {
-        @include gradient-bg;
-    }
-}
+
 nav {
     max-width: $max-width;
     margin: 0 auto;
@@ -26,7 +20,7 @@ nav {
 
     a {
         text-decoration: none;
-        color: $white;   
+        color: $dark-gray;   
     }
 
     ul {
