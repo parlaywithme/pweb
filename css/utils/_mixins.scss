@@ -9,10 +9,10 @@
 }
 
 @mixin gradient-bg{
-  // background-image: linear-gradient(-166deg, #60E16D 1%, #10C09E 60%);
-  background-image: linear-gradient(-166deg, #9660E1 1%, #10C09E 60%);
+  background-image: linear-gradient(-166deg, #60E16D 1%, #10C09E 60%);
+  // background-image: linear-gradient(-166deg, #9660E1 1%, #10C09E 60%);
   @media (min-width: $screen-sm-min){
-    background-image: linear-gradient(-166deg, #9660E1 1%, #10C09E 87%);
-    // background-image: linear-gradient(-166deg, #60E16D 1%, #10C09E 87%);
+    // background-image: linear-gradient(-166deg, #9660E1 1%, #10C09E 87%);
+    background-image: linear-gradient(-166deg, #60E16D 1%, #10C09E 87%);
   }
 }

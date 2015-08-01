@@ -5,7 +5,8 @@
 
 
 #landing-cover{
-  @include gradient-bg;
+  // @include gradient-bg;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.77) 75%, rgb(46, 204, 64) 114%);
   min-height:740px;
   overflow: hidden;
   padding: 0 .8em;
@@ -51,16 +52,17 @@
   }
 
   h1{
-    color: $white;
+    color: $pistol;
     letter-spacing: .25px;
     font-size: 2.4em;
+    font-weight: 200;
     line-height: 1.1;
     margin: 0;
     @media (min-width: $screen-sm-min){
     font-size: 6vw;
     }
     @media (min-width: 1262px){
-      font-size: 4.7em;
+      font-size: 3.9em;
     }
   }
 
@@ -75,7 +77,7 @@
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: .3px;
-    color: $white;
+    // color: $white;
     margin-top: 0;
   }
 
