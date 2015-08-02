@@ -1,11 +1,13 @@
 .legal-wrapper{
   @include outer-container;
   margin-top: $gutter;
+  padding: 0 1em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  @media (min-width: $screen-sm-min){
-    flex-wrap: nowrap;
+
+  @media (min-width: $screen-lg-min){
+    padding: 0;
   }
 
 }
@@ -13,11 +15,21 @@
 
   @include span-columns(12);    
   list-style: none;
-  padding: 0 $gutter;
+  padding: 0;
+  @media (min-width: $screen-lg-min){
+    @include span-columns(2);   
+  }
 
     li {
       display: inline-block;
-      padding: 1em;
+      padding: .5em;
+      @media (min-width: $screen-lg-min){
+        display: block;
+        padding: 1em;
+      }
+      a { 
+        color: $pistol;
+      }
 
       &:hover{
         cursor: pointer;
@@ -35,19 +47,9 @@
         }
 
       }
-      @media (min-width: $screen-sm-min){
-        display: block;
 
-      }
     }
 
-  @media (min-width: $screen-sm-min){
-    @include span-columns(2);   
-
-  }
-  @media (min-width: $screen-md-min){
-    @include shift(1);
-  }
   &.sticky{
     position: fixed;
     top: 0;
@@ -63,11 +65,12 @@
 .legal-content{
   @include span-columns(12);
   margin-top: 1em;
-  font-size: .8em;
+  font-size: 1em;
   line-height: 1.1;
   max-width: 40em;
-  @media (min-width: $screen-sm-min){
+  @media (min-width: $screen-lg-min){
     @include span-columns(8);
+  font-size: .8em;
   }
   p {
     margin: 1.5em 0;
@@ -86,6 +89,7 @@
   h3{
     margin-top: $gutter;
     margin-bottom: .4em;
+    color: $accent-color; 
   }
 
   .emoji {
