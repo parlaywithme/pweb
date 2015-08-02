@@ -3,6 +3,7 @@
 }
 .legal-wrapper{
   @include outer-container;
+  margin-top: $gutter;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -13,34 +14,59 @@
 }
 .legal-menu{
 
-    list-style: none;
-    padding: $gutter;
-    @media (min-width: $screen-sm-min){
-  
+  @include span-columns(12);    
+  list-style: none;
+  padding: 0 $gutter;
 
-  li {
-    display: inline-block;
-    padding: 1em;
 
-    &:hover{
-      cursor: pointer;
-      text-decoration: underline;
+  @media (min-width: $screen-sm-min){
+    @include span-columns(2);   
+    @include shift(1);
+
+    li {
+      display: inline-block;
+      padding: 1em;
+
+      &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      &.active {
+        a {
+        color: $gray;
+        cursor: inherit;
+        }
+        &:hover {
+          text-decoration: none;
+          cursor: default;
+        }
+
+      }
+      @media (min-width: $screen-sm-min){
+        display: block;
+
+      }
     }
+  }
 
-    &.active {
-      color:tomato;
-      background: plum;
-    }
-    @media (min-width: $screen-sm-min){
-      display: block;
-
-    }
+  &.sticky{
+    position: fixed;
+    top: 0;
+    margin-left: 0;
   }
 }
 
+#Shim {
+  visibility: hidden;
 }
 
+
 .legal-content{
+  @include span-columns(12);
+  @media (min-width: $screen-sm-min){
+    @include span-columns(8);
+  }
   p {
     margin: 1.5em 0;
     font-size: 1.2em;

@@ -1,21 +1,24 @@
 ---
 layout: default
 navtype: interior
-path: ../
+path: "../"
 ---
 <div class="{{ page.current }}">
 	<nav>
 		{% include global-nav/global-nav.html %}
 	</nav>
 
-	{% if page.current == legal %}
+<div class="legal-wrapper">
+  <ul class="legal-menu">
+    <li class="{%if page.url contains'/legal/' %} active {% endif %}"><a href="/legal/">About</a></li>
+    <li class="{%if page.url contains '/fees/' %} active {% endif %}"><a href="/fees/" >Fees</a></li>
+    <li class="{%if page.url contains '/terms/' %} active {% endif %}"><a href="/terms/" >Terms</a></li>
+    <li class="{%if page.url contains '/privacy/' %} active {% endif %}"><a href="/privacy/" >privacy</a></li>
+  </ul>
 
-		{% include legal-subnav/legal-subnav.html  %}
-	
-	{% endif %}
-	<main>
-		{{ content }}
+  <div class="legal-content">
+{{ content }}
+  </div>
+</div>
 
-
-	</main>
 </div>

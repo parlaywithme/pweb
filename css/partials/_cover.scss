@@ -26,7 +26,9 @@
 
 #landing-img{
   @include span-columns(12);
-  display: none;
+  // display: none;
+  text-align:center;
+  //TODO: Flex display to use flex order– place after landing text
 
   @media (min-width: $screen-sm-min){
     display: block;
@@ -35,8 +37,7 @@
   }
 
   img {
-    @include size(20vw, auto);
-    width: 100%;
+    @include size(280px, auto);
     @media (min-width: $screen-sm-min){
       // @include size(20vw, auto);
     }
