@@ -23,13 +23,13 @@
       }&:nth-child(2n) {
         margin-right:0;
       }
-    }
     @media (min-width: $screen-lg-min){
       @include span-columns(3);
       &:nth-child(4n) {
         margin-right:0;
     }
-
+    }
+/* Hide/ collapse all examples after 8 examples */
     &:nth-child(n+9) {
       margin-top: 0;
       opacity: 0;
@@ -40,7 +40,7 @@
   img {
     @include size(36px,36px);
   }
-  
+
   &.expanded li{
     margin-top: 1.8em;
     opacity: 1;
