@@ -11,8 +11,6 @@ $(document).ready(function(){
   $(window).on('scroll', function(e){
     var currentScroll = this.scrollY;
 
-
-
     if(currentScroll > 88 && !locked){
 
       locked = true;
@@ -30,5 +28,5 @@ $(document).ready(function(){
       locked = false;
     }
   })
-}  
+})  
 
