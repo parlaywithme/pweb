@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 6em .8em;
-  @media (min-width: $screen-sm-min){
+  @media (min-width: $screen-lg-min){
     padding: 6em 0;
   }
 }
@@ -12,7 +12,7 @@
   @include span-columns(12);
   margin-right: 0;
 
-  @media (min-width: $screen-sm-min){
+  @media (min-width: $screen-lg-min){
     @include span-columns(6);
   }
 
@@ -52,7 +52,7 @@
 .bio {
   @include span-columns(12);
   margin-top: 3em;
-  @media (min-width: $screen-sm-min){
+  @media (min-width: $screen-lg-min){
     @include span-columns(6);
   }
 
