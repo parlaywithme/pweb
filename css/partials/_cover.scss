@@ -10,7 +10,7 @@
   min-height:740px;
   overflow: hidden;
   padding: 0 .8em;
-  @media (min-width: $screen-sm-min){
+  @media (min-width: $screen-lg-min){
     padding: 0;
     max-height: 85vh;
   }
@@ -19,18 +19,17 @@
 .landing-content{
   @include outer-container;
   padding: 6vh 0;
-  @media (min-width: $screen-sm-min){
+  @media (min-width: $screen-lg-min){
     padding: 15vh 0;
   }
 }
 
 #landing-img{
   @include span-columns(12);
-  // display: none;
+  margin-bottom: $gutter*2;
   text-align:center;
-  //TODO: Flex display to use flex order– place after landing text
 
-  @media (min-width: $screen-sm-min){
+  @media (min-width: $screen-lg-min){
     display: block;
     @include span-columns(6);
     padding: 1em 2em 0;
@@ -38,7 +37,7 @@
 
   img {
     @include size(280px, auto);
-    @media (min-width: $screen-sm-min){
+    @media (min-width: $screen-lg-min){
       // @include size(20vw, auto);
     }
   }
@@ -47,7 +46,7 @@
 .cover-text{
   @include span-columns(12);
 
-  @media (min-width: $screen-sm-min){
+  @media (min-width: $screen-lg-min){
     @include span-columns(5);
     @include shift(1);
   }
@@ -59,7 +58,7 @@
     font-weight: 200;
     line-height: 1.1;
     margin: 0;
-    @media (min-width: $screen-sm-min){
+    @media (min-width: $screen-lg-min){
     font-size: 6vw;
     }
     @media (min-width: 1262px){
