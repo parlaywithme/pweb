@@ -33,6 +33,9 @@
   @include span-columns(12);    
   list-style: none;
   padding: 0;
+  @media (max-width: $screen-lg-max){
+    left:0 !important;
+  }
   @media (min-width: $screen-lg-min){
     @include span-columns(2);   
   }
@@ -71,6 +74,20 @@
     position: fixed;
     top: 0;
     margin-left: 0;
+    @media(max-width: $screen-lg-max){
+      background: white;
+      width: 107%;
+      left: -16px !important;
+      top: -16px;
+      padding: .5em 0 .5em 30px;
+      right: -10px;
+      margin-right: 0;
+      box-shadow: 0 0 4.2px rgba(0,0,0,0.4);
+    }
+
+    @media (min-width: $screen-lg-min){
+      background: none;
+    }
   }
 }
 

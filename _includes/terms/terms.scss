@@ -1,10 +1,19 @@
 .legal-content > .summary{
+ 
+
   background: lighten($pistol, 80%);
-  padding: $gutter/.75;
   border-radius: 5px;
+  padding: .125em;
+  @media(min-width: $screen-lg-min){
+  padding: $gutter/.75;
+  }
   
   h2 {margin-top: 0;}
   ul{
     list-style: disc;
+    padding-left: 1.25em;
+    @media (min-width: $screen-lg-min){
+      padding-left: 2em;
+    }
   }
 }
