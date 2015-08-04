@@ -21,6 +21,7 @@ var expandLink = document.getElementById('expand-link');
 var examples = document.getElementById('example-list');
 var events = ['click', 'touchend'];
 
+if(examples){
 for(event of events){
 
   expandLink.addEventListener(event, function(){
@@ -30,16 +31,14 @@ for(event of events){
     }else{
       expandLink.innerHTML = "Show more examples";
     }
-console.log('exfired');
-
   }, false);
 
 }
 
+}
 // window.addEventListener('touchend', function(){
 //   console.log('touched')
 // },false)
-
 // Smooth scrolling for same page links
 $(document).ready(function() {
    $('a[href*=#]').bind('click', function(e) {
@@ -55,6 +54,40 @@ $(document).ready(function() {
   return false;
    });
 });
+
+
+var events = ['click', 'touchend'];
+var $tabContent = $('.tab-item');
+var locked = false;
+
+$(document).ready(function(){
+
+  var $legalMenu = $('.legal-menu');
+  var $leftOffset = $legalMenu.offset().left
+  
+  $(window).on('scroll', function(e){
+    var currentScroll = this.scrollY;
+
+    if(currentScroll > 88 && !locked){
+
+      locked = true;
+      var $shim = $($legalMenu).clone()
+        .attr('id','Shim')
+        .prependTo($($legalMenu).parent()
+      );
+
+      $($legalMenu)
+        .css('left', $leftOffset)
+        .addClass('sticky');      
+    }else if(currentScroll < 88){
+      $($legalMenu).removeClass('sticky')
+      $('#Shim').remove();
+      locked = false;
+    }
+  })
+})  
+
+
 
 //
 var alternateImage = (function(){
