@@ -4,7 +4,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body {% if page.url contains '/legal/' or page.url contains '/terms/' or page.url contains '/privacy/' or page.url contains '/security/ ' or page.url contains '/fees/' %} class="relative" {% endif %} >
 
     {{ content }}
 

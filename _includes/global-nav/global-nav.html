@@ -7,13 +7,14 @@
 <ul>
   {% if page.navtype == 'interior' %}
     <li>
-      <a href="/legal" class="signin">About</a>
+      <a href="/legal" 
+        class="{% if page.url contains '/legal/' or page.url contains '/privacy/' or page.url contains '/terms/' %}active{% endif %}">About</a>
     </li>
     <li>
-      <a href="/support" class="signin">Support</a>
+      <a href="/support" class="{% if page.url contains '/support/' %}active{% endif %}">Support</a>
     </li>
     <li>
-      <a href="/fees" class="signin">Fees</a>
+      <a href="/fees" class="{% if page.url contains '/fees/' %}active{% endif %}">Fees</a>
     </li>
     <li>
       <a href="http://parlay.meteor.com/signin" class="signin">Sign in</a>

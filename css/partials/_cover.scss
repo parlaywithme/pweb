@@ -12,7 +12,6 @@
   padding: 0 .8em;
   @media (min-width: $screen-lg-min){
     padding: 0;
-    max-height: 85vh;
   }
 }
 
@@ -20,7 +19,7 @@
   @include outer-container;
   padding: 6vh 0;
   @media (min-width: $screen-lg-min){
-    padding: 15vh 0;
+    padding: 15vh 0 5vh;
   }
 }
 

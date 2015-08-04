@@ -20,7 +20,11 @@ nav {
 
     a {
         text-decoration: none;
-        color: $dark-gray;   
+        color: $pistol;
+
+        &.active {
+            color: $gray;
+        }   
     }
 
     ul {

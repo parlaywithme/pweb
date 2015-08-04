@@ -1,0 +1,23 @@
+
+table {
+    margin-top: $gutter;
+    border-collapse: collapse;
+}
+
+td {
+    vertical-align: top;
+    padding: 15px 15px 5px;
+}
+
+.free {
+    color: #2ecc40;
+}
+
+.definition-list td:first-child {
+    text-align: right;
+}
+
+
+p.fee {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,10 @@
+.legal-content > .summary{
+  background: lighten($pistol, 80%);
+  padding: $gutter/.75;
+  border-radius: 5px;
+  
+  h2 {margin-top: 0;}
+  ul{
+    list-style: disc;
+  }
+}
