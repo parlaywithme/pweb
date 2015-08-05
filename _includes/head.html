@@ -59,43 +59,29 @@
 
   <!-- http://faviconit.com/en -->
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="196x196" href="/favicon-196.png">
-  <link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
-  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
-  <link rel="apple-touch-icon" href="/favicon-57.png">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico?v2">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png?v2">
+  <link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png?v2">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png?v2">
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png?v2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png?v2">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png?v2">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png?v2">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png?v2">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png?v2">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png?v2">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png?v2">
+  <link rel="apple-touch-icon" href="/favicon-57.png?v2">
   <meta name="msapplication-TileColor" content="#FFFFFF">
-  <meta name="msapplication-TileImage" content="/favicon-144.png">
+  <meta name="msapplication-TileImage" content="/favicon-144.png?v2">
   <meta name="msapplication-config" content="/browserconfig.xml">
 
-  <link rel="stylesheet"
-        href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-  <script type="text/javascript"
-          src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
-          async></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.7/webcomponents.min.js"></script>
-  <script type="text/javascript" src="/bower_components/ua-parser-js/dist/ua-parser.min.js" async></script>  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link href="/css/main.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-  <!-- needed b/c of https://github.com/PolymerElements/iron-icon/issues/19 -->
-  <link rel="import"
-        href="/bower_components/iron-icons/iron-icons.html">
-
-  <link rel="import"
-        href="/bower_components/paper-icon-button/paper-icon-button.html">
-  <link rel="import"
-        href="/bower_components/paper-drawer-panel/paper-drawer-panel.html">
-  <link rel="stylesheet"
-        href="/bower_components/paper-drawer-panel/paper-drawer-panel.css">
-
+  <script type="text/javascript" src="/main.js" async></script>
 
   <!-- google analytics -->
   <script>
@@ -108,14 +94,33 @@
     ga('send', 'pageview');
   </script>
 
-  <link rel="stylesheet" href="http://d3q6uu7asevdsg.cloudfront.net/1.3/css/link_texting.min.css">
+  <!-- todo helpful? -->
+  <link rel="preconnect"
+        href="//www.google-analytics.com">
 
-  <link href="/main.css"
-        rel="stylesheet"
-        type="text/css">
-  <script type="text/javascript"
-          src="/main.js"
-          async></script>
+
+  <script type="application/ld+json">
+   {
+       "@context": "http://schema.org/",
+       "@type": "SoftwareApplication",
+       "name": "Parlay",
+       "operatingSystem": "IOS",
+       "operatingSystem": "ANDROID",
+       "applicationCategory": "Entertainment",
+       "applicationCategory": "Social",
+       "offers": {
+           "@type": "Offer",
+           "price": "0"
+       }
+   }
+  </script>
+       <!-- "aggregateRating": { -->
+       <!--     "@type": "AggregateRating", -->
+       <!--     "ratingValue": "4.6", -->
+       <!--     "ratingCount": "8864" -->
+       <!-- }, -->
+
+
 </head>
 
 

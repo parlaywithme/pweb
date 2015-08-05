@@ -1,0 +1,53 @@
+/* footer */
+
+footer {
+    @include outer-container;
+    text-align: center;
+    color: $gray;
+    margin-bottom: 1em;
+    font-size: .875em;
+    
+    svg {
+        @include size(18px, 18px);
+    }
+    #social {margin-bottom:.5em;}
+    #social * {
+        fill: $gray;
+    }
+
+    #social a {
+        padding: 13px;
+        margin-bottom: .4em;
+    }
+
+    a {
+        color: $pistol;
+    }
+
+    p, ul {
+        margin: .4em 0;
+    }
+}
+
+hr.separator {
+    width: 10vw;
+    margin: 3em auto 1.2em;
+    @media (max-width: 1000px) {
+        width: 30vw;
+    }
+}
+
+
+#social > a {
+    margin: 0 18px;
+}
+
+.bottom-nav{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+    a {
+        padding: .4em .8em;
+    }
+}

@@ -1,0 +1,41 @@
+<hr class="separator">
+<footer>
+  <p id="social">
+    <a href="https://twitter.com/parlaytheapp">
+      {% include svg/twitter.svg  %}
+    </a>
+    <a href="https://www.facebook.com/ParlayWithMe">
+      {% include svg/facebook.svg  %}
+    </a>
+    <a href="http://instagram.com/parlaytheapp/">
+      {% include svg/instagram.svg  %}
+    </a>
+  </p>
+  
+  
+
+  <p id="copyright">
+    Copyright © 2015 Parlay. All Rights Reserved.
+  </p>
+  {% unless page.url contains '/support' or page.url contains '/legal' or page.url contains '/fees' %}
+  <ul class="bottom-nav">
+    {% if page.url contains '/terms' or page.url contains '/privacy' or page.url contains '/security' %}
+    <a href="/">Home</a>
+    <a href="#product">Product</a>
+    <a href="#team">Team</a>
+    <a href="/support/">Support</a>
+    <a href="/fees/">Fees</a>
+    {% else %}
+    <a href="/support/">Support</a>
+    <a href="/fees/">Fees</a>
+    <a href="/legal/">Legal</a>
+    <a href="/security/">Security</a>
+    <a href="/terms/">Terms</a>
+    {% endif %}
+  </ul>
+  {% endunless %}
+</footer>
+</div>
+</paper-drawer-panel>
+
+

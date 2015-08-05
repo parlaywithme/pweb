@@ -1,0 +1,27 @@
+//colors
+$white: #f1f1f1;
+$black: #222222;
+$dark-gray: #787878;
+$gray: #b5b5b5;
+$text-green: #3FA711;
+$green: #16D64B;
+$pistol: #163939;
+$secondary-color: #23983A;
+$accent-color: lighten($pistol, 15%);
+
+// Breakpoints
+$screen-sm: 415px;
+$screen-md: 768px;
+$screen-lg: 890px;
+
+$screen-sm: $screen-sm !default;
+$screen-md: $screen-md !default;
+$screen-lg: $screen-lg !default;
+
+$screen-sm-min: ($screen-sm ) !default;
+$screen-md-min: ($screen-md ) !default;
+$screen-lg-min: ($screen-lg ) !default;
+
+$screen-sm-max: ($screen-sm - 1) !default;
+$screen-md-max: ($screen-md - 1) !default;
+$screen-lg-max: ($screen-lg - 1) !default;

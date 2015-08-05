@@ -20,7 +20,8 @@
     "emojify.js": "~1",
     "paper-icon-button": "PolymerElements/paper-icon-button#~1.0.3",
     "paper-drawer-panel": "PolymerElements/paper-drawer-panel#~1.0.3",
-    "ua-parser-js": "~0.7.7"
+    "ua-parser-js": "~0.7.7",
+    "owl-carousel2": "~2.0.0-beta.3"
   },
   "resolutions": {
     "polymer": "~1",

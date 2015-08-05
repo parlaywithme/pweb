@@ -1,0 +1,29 @@
+<ul class="subheading">
+  <li>
+    {% if page.current == 'legal' %}
+    Parlays
+    {% else %}
+    <a href="/legal/">
+      Parlays
+    </a>
+    {% endif %}
+  </li>
+  <li>
+    {% if page.current == 'terms' %}
+    Terms
+    {% else %}
+    <a href="/terms/">
+      Terms
+    </a>
+    {% endif %}
+  </li>
+  <li>
+    {% if page.current == 'privacy' %}
+    Privacy
+    {% else %}
+    <a href="/privacy/">
+      Privacy
+    </a>
+    {% endif %}
+  </li>
+</ul>

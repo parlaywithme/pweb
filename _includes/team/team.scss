@@ -1,0 +1,98 @@
+#team{
+  @include outer-container;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6em .8em;
+  @media (min-width: $screen-lg-min){
+    padding: 6em 0;
+  }
+}
+  
+#team-hero{
+  @include span-columns(12);
+  margin-right: 0;
+
+  @media (min-width: $screen-lg-min){
+    @include span-columns(6);
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+
+.team-title{
+  @include span-columns(6);
+}
+
+#names {
+  display: flex;
+  width: 300px;
+  margin: 30px auto 40px;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+
+  #names > div {
+    height: 80px;
+  }
+
+  #together {
+    font-size: 50px;
+    line-height: 92px; /* todo must be better way */
+  }
+
+  #last {
+    line-height: 63px;
+  }
+}
+
+
+.bio {
+  @include span-columns(12);
+  margin-top: 3em;
+  @media (min-width: $screen-lg-min){
+    @include span-columns(6);
+  }
+
+  .title {
+    text-align: left;
+    font-size: .875em;
+    font-weight: 600;
+    letter-spacing: .5px;
+    margin: 1em 0 0;
+  }
+
+  h2 {
+    margin: .125em 0 1em;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+  }
+
+  img {
+    width: 100%;
+    clip-path: inset(15% 0 15% 0);
+    margin-top: -12%;
+    margin-bottom: -12%;
+  }
+
+  .contact-info{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 0 .75em 0 0;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  svg {
+    @include size(16px, 16px);
+    margin-right: .5em;
+  }
+}

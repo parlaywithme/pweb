@@ -1,13 +1,17 @@
+
 <!DOCTYPE html>
 <html>
 
   {% include head.html %}
 
-  <body>
+  <body {% if page.url contains '/legal/' or page.url contains '/terms/' or page.url contains '/privacy/' or page.url contains '/security/ ' or page.url contains '/fees/' %} class="relative" {% endif %} >
 
     {{ content }}
 
-    {% include footer.html %}
+    {% include footer/footer.html  %}
+
   </body>
+
+  <script type="text/javascript" src="/global.js"></script>
 
 </html>
