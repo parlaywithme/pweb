@@ -6,7 +6,11 @@ var locked = false;
 $(document).ready(function(){
 
   var $legalMenu = $('.legal-menu');
-  var $leftOffset = $legalMenu.offset().left
+  if ($legalMenu.length === 0) {
+    return;
+  }
+
+  var $leftOffset = $legalMenu.offset().left;
   
   $(window).on('scroll', function(e){
     var currentScroll = this.scrollY;
@@ -23,10 +27,10 @@ $(document).ready(function(){
         .css('left', $leftOffset)
         .addClass('sticky');      
     }else if(currentScroll < 88){
-      $($legalMenu).removeClass('sticky')
+      $($legalMenu).removeClass('sticky');
       $('#Shim').remove();
       locked = false;
     }
-  })
-})  
+  });
+});
 

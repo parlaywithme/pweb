@@ -19,7 +19,7 @@
   @include outer-container;
   padding: 6vh 0;
   @media (min-width: $screen-lg-min){
-    padding: 15vh 0 5vh;
+    padding: 1vh 0 5vh;
   }
 }
 
@@ -34,20 +34,26 @@
     padding: 1em 2em 0;
   }
 
-  img {
-    @include size(280px, auto);
-    @media (min-width: $screen-lg-min){
-      // @include size(20vw, auto);
-    }
+  > img {
+    width: 40vw;
+    min-width: 300px;
+    max-width: 420px;
+    
+    // @include size(280px, auto);
+    // @media (min-width: $screen-lg-min){
+    //   @include size(20vw, auto);
+    // }
   }
 }
 
 .cover-text{
   @include span-columns(12);
+  padding-right: 5vw;
 
   @media (min-width: $screen-lg-min){
     @include span-columns(5);
     @include shift(1);
+    padding-top: 15vh;
   }
 
   h1{
@@ -60,7 +66,7 @@
     @media (min-width: $screen-lg-min){
     font-size: 6vw;
     }
-    @media (min-width: 1262px){
+    @media (min-width: 1160px){
       font-size: 3.9em;
     }
   }

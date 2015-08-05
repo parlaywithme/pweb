@@ -5,31 +5,45 @@
 
 <ul>
   {% if page.navtype == 'interior' %}
-    <li>
-      <a href="/legal" 
-        class="{% if page.url contains '/legal/' or page.url contains '/privacy/' or page.url contains '/terms/' %}active{% endif %}">About</a>
-    </li>
-    <li>
-      <a href="/support" class="{% if page.url contains '/support/' %}active{% endif %}">Support</a>
-    </li>
-    <li>
-      <a href="/fees" class="{% if page.url contains '/fees/' %}active{% endif %}">Fees</a>
-    </li>
-    <li>
-      <a href="http://parlay.meteor.com/signin" class="signin">Sign in</a>
-    </li>
-    {% else %}
-    <li>
-      <a href="#product">Product</a>
-    </li>
-    <li>
-      <a href="#team">Team</a>
-    </li>
-    <li>
-      <a href="https://parlay.io/signin" class="signin">Sign in</a>
-    </li>
+  <li id="home-link">
+    <a href="/">
+      Home
+    </a>
+  </li>
   {% endif %}
-
+  <li>
+    <a href="#product">
+      Product
+    </a>
+  </li>
+  <li>
+    <a href="#team">
+      Team
+    </a>
+  </li>
+  {% if page.navtype == 'interior' %}
+  <li>
+    <a href="/support/" class="{% if page.url contains '/support/' %}active{% endif %}">
+      Support
+    </a>
+  </li>
+  <li>
+    <a href="/legal/" 
+       class="{% if page.url contains '/legal/' or page.url contains '/privacy/' or page.url contains '/terms/' or page.url contains '/security/'%}active{% endif %}">
+      Legal
+    </a>
+  </li>
+  <li>
+    <a href="/fees/" class="{% if page.url contains '/fees/' %}active{% endif %}">
+      Fees
+    </a>
+  </li>
+  <li id="signin-link">
+    <a href="https://parlay.io/signin" class="signin">
+      Sign in
+    </a>
+  </li>
+  {% endif %}
 </ul>
 
 

@@ -10,16 +10,8 @@ path: "../"
   </nav>
 
   <div class="legal-wrapper">
-    <ul class="legal-menu">
-      <li class="{%if page.url contains'/legal/' %} active {% endif %}"><a href="/legal/">About</a></li>
-      <li class="{%if page.url contains '/terms/' %} active {% endif %}"><a href="/terms/" >Terms</a></li>
-      <li class="{%if page.url contains '/privacy/' %} active {% endif %}"><a href="/privacy/" >Privacy</a></li>
-      <li class="{%if page.url contains '/security/' %} active {% endif %}"><a href="/security/" >Security</a></li>
-    </ul>
-
     <div class="legal-content">
       {{ content }}
     </div>
   </div>
-
 </div>

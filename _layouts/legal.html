@@ -1,24 +1,24 @@
 ---
-layout: page
-current: legal
+layout: default
+navtype: interior
+path: "../"
 ---
-<!-- The Legal page include
-About
-Terms
-Privacy
 
-In Tabs -->
+<div class="{{ page.current }}">
+  <nav>
+    {% include global-nav/global-nav.html %}
+  </nav>
 
-<!-- For each section, make a tab -->
-<!-- would be nice if the content was included
-Make it a layout again
--->
+  <div class="legal-wrapper">
+    <ul class="legal-menu">
+      <li class="{%if page.url contains'/legal/' %} active {% endif %}"><a href="/legal/">Parlays</a></li>
+      <li class="{%if page.url contains '/terms/' %} active {% endif %}"><a href="/terms/" >Terms</a></li>
+      <li class="{%if page.url contains '/privacy/' %} active {% endif %}"><a href="/privacy/" >Privacy</a></li>
+      <li class="{%if page.url contains '/security/' %} active {% endif %}"><a href="/security/" >Security</a></li>
+    </ul>
 
-<!-- In the tab body
--->
-
-<div class="legal">
-  
+    <div class="legal-content">
+      {{ content }}
+    </div>
+  </div>
 </div>
-
-

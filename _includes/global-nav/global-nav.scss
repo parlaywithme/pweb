@@ -12,11 +12,17 @@ nav {
     align-content: center;
     justify-content: center;
     
-    @media (min-width: $screen-sm-max){
+    @media (min-width: $screen-sm-max) {
         justify-content: space-between;
         padding: .5em 0;
     }
 
+    @media (max-width: $screen-sm-max) {
+        #home-link,
+        #signin-link {
+            display: none;
+        }
+    }
 
     a {
         text-decoration: none;
@@ -31,14 +37,17 @@ nav {
         list-style: none;
         margin: 0; padding: 0;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
 
         li {
             padding: 0 .5em;
         }
     }
 
-    .logo{
-            width: 140px;
+    .logo {
+            width: 200px;
+            padding: 0 30px;
             img{width: 100%;}
         @media (min-width: $screen-sm-min){
             margin-top: .4em;

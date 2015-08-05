@@ -1,7 +1,7 @@
 .fees .legal-content{
   font-size: 1em;
 
-  h3,p {
+  h2,h3,p {
     text-align: center;
   }
 
@@ -24,6 +24,8 @@
 
 .definition-list td:first-child {
     text-align: right;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 
