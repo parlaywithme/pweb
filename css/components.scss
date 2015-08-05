@@ -227,11 +227,17 @@ nav {
     -ms-flex-pack: center;
     justify-content: center;
     
-    @media (min-width: $screen-sm-max) {
+    @media (min-width: 650px) {
         -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
         justify-content: space-between;
         padding: .5em 0;
+    }
+
+    @media (max-width: 650px) {
+        /* make it wrap to separate line */ 
+        margin-left: 1em; 
+        margin-right: 1em; 
     }
 
     @media (max-width: $screen-sm-max) {
@@ -318,6 +324,7 @@ nav {
 .legal-menu{
 
   @include span-columns(12);    
+  margin-right: 0;
   list-style: none;
   padding: 0;
   @media (max-width: $screen-lg-max){
@@ -416,6 +423,10 @@ nav {
   @include gradient-bg;
   padding: 6em 0;
   margin-top: 1.8em;
+
+  @media (max-width: 660px) {
+    padding: 0 0 4em;
+  }
 }
 
 .product-demo {
@@ -547,6 +558,9 @@ $nav-width: 10vw;
   padding: 6em .8em;
   @media (min-width: $screen-lg-min){
     padding: 6em 0;
+  }
+  @media (max-width: 660px) {
+    padding: 0 .8em;
   }
 }
   

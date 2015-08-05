@@ -12,9 +12,15 @@ nav {
     align-content: center;
     justify-content: center;
     
-    @media (min-width: $screen-sm-max) {
+    @media (min-width: 650px) {
         justify-content: space-between;
         padding: .5em 0;
+    }
+
+    @media (max-width: 650px) {
+        /* make it wrap to separate line */ 
+        margin-left: 1em; 
+        margin-right: 1em; 
     }
 
     @media (max-width: $screen-sm-max) {

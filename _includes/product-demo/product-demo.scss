@@ -2,6 +2,10 @@
   @include gradient-bg;
   padding: 6em 0;
   margin-top: 1.8em;
+
+  @media (max-width: 660px) {
+    padding: 0 0 4em;
+  }
 }
 
 .product-demo {
