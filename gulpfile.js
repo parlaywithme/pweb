@@ -28,13 +28,22 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 });
  
 gulp.task('scripts', function() {
-  return gulp.src(['./_includes/**/*.js', './main.js'])
+  return gulp.src([
+    './bower_components/owl-carousel2/dist/owl.carousel.min.js',
+    './bower_components/ua-parser-js/dist/ua-parser.min.js',
+    './_includes/**/*.js',
+    './main.js'
+  ])
     .pipe(concat('global.js'))
     .pipe(gulp.dest('./'));
 });
 
 gulp.task('component-styles', function(){
-  return gulp.src(['./_includes/**/*.scss'])
+  return gulp.src([
+    './bower_components/owl-carousel2/dist/assets/owl.carousel.min.css',
+    './bower_components/owl-carousel2/dist/assets/owl.theme.default.min.css',
+    './_includes/**/*.scss'
+  ])
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false

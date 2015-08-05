@@ -1,12 +1,20 @@
 <div class="product-demo">
+  <div id="screen-nav">
+    <div id="next-screen">
+      {% include svg/chevron-right.svg %}
+    </div>
 
-    <ul class="screen-images">
-      {% for screenshot in site.data.product-demo  %}
-        <li>
-          <h4>{{ screenshot.title }}</h4>
-          <img src="assets/screenshots/{{ screenshot.image }}.png" alt="parlay app image {{ screenshot.image }}">
-        </li>
-      {% endfor %}
-    </ul>
-
+    <div id="prev-screen">
+      {% include svg/chevron-left.svg %}
+    </div>
+  </div>
+  
+  <div class="screen-images owl-carousel owl-theme">
+    {% for screenshot in site.data.product-demo  %}
+    <div class="screen">
+      <h4>{{ screenshot.title }}</h4>
+      <img src="assets/screenshots/{{ screenshot.image }}.png" alt="parlay app image {{ screenshot.image }}">
+    </div>
+    {% endfor %}
+  </div>
 </div>
