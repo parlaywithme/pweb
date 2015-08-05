@@ -16,4 +16,5 @@ markdown: kramdown
 sass:
   sass_dir: css
 
-exclude: ['bower_components']
+#If bower components are excluded, be sure to add in all dependancies. i.e., jquery.
+#exclude: ['bower_components']
