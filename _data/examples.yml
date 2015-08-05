@@ -1,0 +1,75 @@
+---
+# All the example data sets. 
+- title: Fantasy Football
+  emoji: football
+  description: Will you win the league? be in the lead by Monday? will X player will do better than Y player?
+
+- title: Current Events
+  emoji: newspaper
+  description: Will Hillary run for President? will XYZ professional sports team be sold? what will the Supreme Court rule? will a woman will be on the Republican ticket?
+
+- title: Social Events
+  emoji: confetti_ball
+  description: Will you get a phone number at the bar? or get more matches on Tinder/Hinge/Coffee meets Bagel? or get invited to a party? or chug a beer faster than me?... anything that makes a night out (or in) just a tad more interesting.
+
+- title: Eating Challenge
+  emoji: 
+  multi-emoji:
+    - poultry_leg
+    - pizza
+    - cookie
+  description: Can you eat really spicy hot sauce? or an entire pizza? or a large amount of hot dogs/cookies/wings?
+
+- title: Beer Pong
+  emoji: beers 
+  description: Whether you play beirut or with paddles the only thing that makes beer pong more fun is $... and keystone lite 
+
+- title: Embarrassing Tasks 
+  emoji: flushed
+  description: "Skinny dip, go to a yoga class, streak a lecture, wear a crazy wig to a bar, wear a banana suit to work... honestly, the only thing better than being right is watching your friends do something ridiculous. cheers." 
+
+- title: Online Games
+  emoji: computer
+  description: Words with Friends? or Sudoku? if you're feelin retro maybe a nice game of Snake? or Pacman?
+
+- title: Physical Contests
+  emoji: muscle
+  description: Who will do more pushups/sprints/jumping jacks? or who can stay on the couch the longest...
+
+- title: Trivia
+  emoji: books
+  description: Was that a Backstreet Boys or N*Sync song? which one was JT even in...? who was the fifth President of the US? really anything you can google later...
+
+- title: Card Games
+  emoji: 
+  multi-emoji:
+    - spades
+    - diamonds
+    - hearts
+    - clubs
+  description: Cards Against Humanity? Kings? Go Fish? 52 pick up? 
+
+- title: TV Shows
+  emoji: tv
+  description: Will your favorite character die this season? will there be another season? will X end up kissing Y? 
+
+- title: Movies
+  emoji: movie_camera
+  description: Will The Interview be shown in theaters? will X make over 15MM in the box office this weekend? award nominations? 
+
+- title: Celebrities
+  emoji: sunglasses
+  description: Will they get married by June? will they have their first baby by April? will they retweet you!?
+
+- title: Weight Loss/Gain
+  emoji: santa
+  description: Will you lose 10 pounds? will you gain 10 pounds? just do it healthily... xoxo
+
+- title: Companies/Products
+  emoji: office
+  description: What's the next product Apple will announce? how will the iWatch do? will XYZ get a deal on Shark Tank? 
+
+- title: College Events
+  emoji: mortar_board
+  description: Who will win the fraternity chili bowl? will you get into that popular class? will more than 500 people come to your charity event? will your friend win the student government election? will you get a better grade on the final exam?
+

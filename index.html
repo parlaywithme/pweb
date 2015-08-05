@@ -1,400 +1,72 @@
 ---
 layout: default
 title:  "Parlay with Friends"
+path: "/"
+navtype: ""
 ---
-
-<div id="landing-header">
-  <div id="landing-topnav">
-    <a href="/" class="logo">
-      <h1 class="logo">parlay</h1>
-    </a>
-    <a href="/#product">product</a>
-    <a href="/#team">team</a>
-  </div>
-
-  <a href="https://parlay.io/signin" class="signin">
-    sign in
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" data-icon="account" width="128" height="128" class="signin" viewBox="0 0 128 128" data-src="/iconic/svg/account.svg">
-      <g><title>Sign In</title></g>
-      <g data-width="128" data-height="128" class="iconic-lg iconic-container" display="inline">
-        <g class="iconic-account-login">
-          <path stroke="#000" stroke-width="8" stroke-linecap="square" stroke-miterlimit="10" class="iconic-account-login-entrance iconic-property-accent iconic-property-stroke" d="M46 4h78v120h-78" fill="none"></path>
-          <path stroke="#000" stroke-width="8" stroke-linecap="square" stroke-miterlimit="10" class="iconic-account-login-arrow iconic-account-login-arrow-line iconic-property-stroke" d="M4 64h76" fill="none"></path>
-          <path d="M90.7 63.2l-21.4-12.4c-.7-.4-1.3-.1-1.3.7v25c0 .8.6 1.2 1.3.7l21.4-12.5c.7-.4.7-1 0-1.5z" class="iconic-account-login-arrow iconic-account-login-arrow-head iconic-property-fill"></path>
-        </g>
-        <g class="iconic-account-logout" display="none">
-          <path stroke="#000" stroke-width="8" stroke-linecap="square" stroke-miterlimit="10" class="iconic-account-logout-entrance iconic-property-accent iconic-property-stroke" d="M46 4h78v120h-78" fill="none"></path>
-          <path stroke="#000" stroke-width="8" stroke-linecap="square" stroke-miterlimit="10" class="iconic-account-logout-arrow iconic-account-logout-arrow-line iconic-property-stroke" d="M88 64h-76" fill="none"></path>
-          <path d="M1.3 64.8l21.4 12.5c.7.4 1.3.1 1.3-.7v-25c0-.8-.6-1.2-1.3-.7l-21.4 12.3c-.7.5-.7 1.1 0 1.6z" class="iconic-account-logout-arrow iconic-account-logout-arrow-head iconic-property-fill"></path>
-        </g>
-      </g>
-      <g data-width="32" data-height="31" class="iconic-md iconic-container" display="none" transform="scale(4)">
-        <g class="iconic-account-login">
-          <path stroke="#000" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" class="iconic-account-login-entrance iconic-property-accent iconic-property-stroke" d="M12.5 1.5h18v28h-18" fill="none"></path>
-          <path stroke="#000" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" class="iconic-account-login-arrow iconic-account-login-arrow-line iconic-property-stroke" d="M1.5 15.5h14.5" fill="none"></path>
-          <path d="M20.6 15.8l-5.2 3.9c-.2.2-.4.1-.4-.2v-8c0-.3.2-.4.4-.2l5.2 3.9c.2.2.2.4 0 .6z" class="iconic-account-login-arrow iconic-account-login-arrow-head iconic-property-fill"></path>
-        </g>
-        <g class="iconic-account-logout" display="none">
-          <path stroke="#000" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" class="iconic-account-logout-entrance iconic-property-accent iconic-property-stroke" d="M12.5 1.5h18v28h-18" fill="none"></path>
-          <path stroke="#000" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" class="iconic-account-logout-arrow iconic-account-logout-arrow-line iconic-property-stroke" d="M19.5 15.5h-14.5" fill="none"></path>
-          <path d="M.4 15.2l5.2-3.9c.2-.2.4-.1.4.2v8c0 .3-.2.4-.4.2l-5.2-3.9c-.2-.2-.2-.4 0-.6z" class="iconic-account-logout-arrow iconic-account-logout-arrow-head iconic-property-fill"></path>
-        </g>
-      </g>
-      <g data-width="16" data-height="16" class="iconic-sm iconic-container" display="none" transform="scale(8)">
-        <g class="iconic-account-login">
-          <path stroke="#000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" class="iconic-account-login-entrance iconic-property-accent iconic-property-stroke" d="M7 1h8v14h-8" fill="none"></path>
-          <path stroke="#000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" class="iconic-account-login-arrow iconic-account-login-arrow-line iconic-property-stroke" d="M1 8h9" fill="none"></path>
-          <path class="iconic-account-login-arrow iconic-account-login-arrow-head iconic-property-fill" d="M12 8l-4-4v8z"></path>
-        </g>
-        <g class="iconic-account-logout" display="none">
-          <path stroke="#000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" class="iconic-account-logout-entrance iconic-property-accent iconic-property-stroke" d="M7 1h8v14h-8" fill="none"></path>
-          <path stroke="#000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" class="iconic-account-logout-arrow iconic-account-logout-arrow-line iconic-property-stroke" d="M11 8h-9" fill="none"></path>
-          <path class="iconic-account-logout-arrow iconic-account-logout-arrow-head iconic-property-fill" d="M0 8l4 4v-8z"></path>
-        </g>
-      </g>
-    </svg>
-  </a>
-</div>
+<link rel="stylesheet" href="http://d3q6uu7asevdsg.cloudfront.net/1.3/css/link_texting.min.css">
 
 <main id="landing-main">
-  <div id="landing-top">
+  <section id="landing-cover">
+    <nav>
+      {% include global-nav/global-nav.html %}
+    </nav>
 
-    <div id="landing-img">
-      <img src="images/landing.png">
-    </div>
-
-    <div id="landing-text">
-
-      <h1 class="headline"
-          id="index-headline">
-        parlay with your friends
-      </h1>
-
-      <h2>uh... what’s a parlay<img class="emoji" src="images/emoji/interrobang.png" title=":interrobang:" alt=":interrobang:" align="absmiddle"></img></h2> 
-      <h3>it's a prediction.</h3> 
-
-      <p>
-        you predict something and your friend says you’re wrong. and at the end, whoever loses may decide to give the winner a gift <img class="emoji" src="images/emoji/moneybag.png" title=":moneybag:" alt=":moneybag:" align="absmiddle"></img>... ’cause, you know, respect <img class="emoji" src="images/emoji/facepunch.png" title=":facepunch:" alt=":facepunch:" align="absmiddle"></img> 
-      </p>
-
-      <div class="linkTextingWidget">
-        <div class="linkTextingInner">
-          <input type="hidden" class="linkID" value="1f4239d8-4651-4e0f-b723-48f04d2b6583">
-          <input class="linkTextingInput" type="tel" id="numberToText_linkTexting"></input>
-          <button class="linkTextingButton" type="button" id="sendButton_linkTexting">Text me a link</button>
-          <div class="linkTextingError" id="linkTextingError" style="display:none;"></div>
-        </div>
+    <div class="landing-content">
+      <div id="landing-img">
+        <img src="assets/screenshots/screenshot_d.png">
       </div>
 
-      <ul id="ideas">
-        <li>
-          <h4>
-            Fantasy Football
-            <img class="emoji" src="images/emoji/football.png" align="absmiddle">
-          </h4>
-          <p>
-            will you win the league? be in the lead by Monday? will X player will do better than Y player?
-          </p>
-        </li>
-        <li>
-          <h4>
-            Current Events
-            <img class="emoji" src="images/emoji/newspaper.png" align="absmiddle">
-          </h4>
-          <p>
-            will Hillary run for President? will XYZ professional sports team be sold? what will the Supreme Court rule? will a woman will be on the Republican ticket?
-          </p>
-        </li>
-        <li>
-          <h4>
-            Social Events
-            <img class="emoji" src="images/emoji/confetti_ball.png" align="absmiddle">
-          </h4>
-          <p>
-            will you get a phone number at the bar? or get more matches on Tinder/Hinge/Coffee meets Bagel? or get invited to a party? or chug a beer faster than me?... anything that makes a night out (or in) just a tad more interesting.
-          </p>
-        </li>
-        <li>
-          <h4>
-            Eating Challenge
-            <img class="emoji" src="images/emoji/poultry_leg.png" align="absmiddle">
-            <img class="emoji" src="images/emoji/pizza.png" align="absmiddle">
-            <img class="emoji" src="images/emoji/cookie.png" align="absmiddle">
-          </h4>
-          <p>
-            can you eat really spicy hot sauce? or an entire pizza? or a large amount of hot dogs/cookies/wings?
-          </p>
-        </li>
-        <li>
-          <h4>
-            Beer Pong
-            <img class="emoji" src="images/emoji/beers.png" align="absmiddle">
-          </h4>
-          <p>
-            whether you play beirut or with paddles the only thing that makes beer pong more fun is $... and keystone lite
-          </p>
-        </li>
-        <li>
-          <h4>
-            Embarrassing Tasks
-            <img class="emoji" src="images/emoji/flushed.png" align="absmiddle">
-          </h4>
-          <p>
-            skinny dip, go to a yoga class, streak a lecture, wear a crazy wig to a bar, wear a banana suit to work... honestly, the only thing better than being right is watching your friends do something ridiculous. cheers.
-          </p>
-        </li>
-        <li>
-          <h4>
-            Online Games
-            <img class="emoji" src="images/emoji/computer.png" align="absmiddle">
-          </h4>
-          <p>
-            Words with Friends? or Sudoku? if you're feelin retro maybe a nice game of Snake? or Pacman?
-          </p>
-        </li>
-        <li>
-          <h4>
-            Physical Contests
-            <img class="emoji" src="images/emoji/muscle.png" align="absmiddle">
-          </h4>
-          <p>
-            who will do more pushups/sprints/jumping jacks? or who can stay on the couch the longest...
-          </p>
-        </li>
-        <li>
-          <h4>
-            Trivia
-            <img class="emoji" src="images/emoji/books.png" align="absmiddle">
-          </h4>
-          <p>
-            was that a Backstreet Boys or N*Sync song? which one was JT even in...? who was the fifth President of the US? really anything you can google later...
-          </p>
-        </li>
-        <li>
-          <h4>
-            Card Games
-            <img class="emoji" src="images/emoji/spades.png" align="absmiddle">
-            <img class="emoji" src="images/emoji/diamonds.png" align="absmiddle">
-            <img class="emoji" src="images/emoji/hearts.png" align="absmiddle">
-            <img class="emoji" src="images/emoji/clubs.png" align="absmiddle">
-          </h4>
-          <p>
-            Cards Against Humanity? Kings? Go Fish? 52 pick up? 
-          </p>
-        </li>
-        <li>
-          <h4>
-            TV Shows
-            <img class="emoji" src="images/emoji/tv.png" align="absmiddle">
-          </h4>
-          <p>
-            will your favorite character die this season? will there be another season? will X end up kissing Y? 
-          </p>
-        </li>
-        <li>
-          <h4>
-            Movies
-            <img class="emoji" src="images/emoji/movie_camera.png" align="absmiddle">
-          </h4>
-          <p>
-            will The Interview be shown in theaters? will X make over 15MM in the box office this weekend? award nominations? 
-          </p>
-        </li>
-        <li>
-          <h4>
-            Celebrities
-            <img class="emoji" src="images/emoji/sunglasses.png" align="absmiddle">
-          </h4>
-          <p>
-            will they get married by June? will they have their first baby by April? will they retweet you!?
-          </p>
-        </li>
-        <li>
-          <h4>
-            Weight Loss/Gain
-            <img class="emoji" src="images/emoji/santa.png" align="absmiddle">
-          </h4>
-          <p>
-            will you lose 10 pounds? will you gain 10 pounds? just do it healthily... xoxo
-          </p>
-        </li>
-        <li>
-          <h4>
-            Companies/Products
-            <img class="emoji" src="images/emoji/office.png" align="absmiddle">
-          </h4>
-          <p>
-            what's the next product Apple will announce? how will the iWatch do? will XYZ get a deal on Shark Tank? 
-          </p>
-        </li>
-        <li>
-          <h4>
-            College Events
-            <img class="emoji" src="images/emoji/mortar_board.png" align="absmiddle">
-          </h4>
-          <p>
-            who will win the fraternity chili bowl? will you get into that popular class? will more than 500 people come to your charity event? will your friend win the student government election? will you get a better grade on the final exam?
-          </p>
-        </li>
-      </ul>
+      <div class="cover-text">
+        <h1 class="headline"
+            id="index-headline">
+          parlay with your friends
+        </h1>
+        <h2>
+          What’s a parlay!?
+        </h2>
+        <h3>
+          it's a prediction.
+        </h3> 
 
+        <p>
+          You predict something and your friend says you’re wrong. At the end, whoever loses may decide to give the winner a gift <img class="emoji" src="images/emoji/moneybag.png" title=":moneybag:" alt=":moneybag:" align="absmiddle">... ’cause, you know, respect <img class="emoji" src="images/emoji/facepunch.png" title=":facepunch:" alt=":facepunch:" align="absmiddle">
+        </p>
+
+        <div class="linkTextingWidget">
+          <div class="linkTextingInner">
+            <input type="hidden" class="linkID" value="1f4239d8-4651-4e0f-b723-48f04d2b6583">
+            <input class="linkTextingInput" type="tel" id="numberToText_linkTexting"></input>
+            <button class="linkTextingButton" type="button" id="sendButton_linkTexting">Text me a link</button>
+            <div class="linkTextingError" id="linkTextingError" style="display:none;"></div>
+          </div>
+        </div>
+
+        {%include appstore-icons/appstore-icons.html %}
+
+      </div>
     </div>
-  </div>
+  </section>
 
+  <section id="examples">
+    {%include example-list/example-list.html %}
+  </section>
 
-  <section class="download-links">
-    <a href="https://itunes.apple.com/us/app/parlay-challenge-your-friends/id944337527?mt=8"
-       id="apple-store">
-      <img src="/apple_store.png">
-    </a>
-    <a href="http://play.google.com/store/apps/details?id=me.parlaywith.parlay"
-       id="play-store">
-      <img src="/play_store.png">
-    </a>
+  <section id="product">
+    {%include product-demo/product-demo.html %}
+  </section>
+
+  <section id="team">
+    {% include team/team.html %}
   </section>
 
 
-  <!--
-  <video id="video" preload="">
-  <source src="https://s3.amazonaws.com/parlay/tutorial.mp4" type="video/mp4"></source>
-  <source src="https://s3.amazonaws.com/parlay/tutorial.webm" type="video/webm"></source>
-  </video>
-  -->
-
-  <div class="product-screenshots" id="product">
-    <div class="image-container">
-      <img src="/images/screenshot_5.png">
-    </div>
-    <div class="image-container">
-      <img src="/images/screenshot_1.png">
-    </div>
-    <div class="image-container">
-      <img src="/images/screenshot_2.png">
-    </div>
-    <div class="image-container">
-      <img src="/images/screenshot_3.png">
-    </div>
-    <div class="image-container">
-      <img src="/images/screenshot_4.png">
-    </div>
-  </div>
-
-
-  <div id="team">
-    <div id="names">
-      <div id="first">
-        <h3>Sidney</h3>
-        <h3>Loren</h3>
-      </div>
-      <div id="together">
-        }
-      </div>
-      <div id="last">
-        <h3>Sands-Ramshaw</h3>
-      </div>
-    </div>
-
-
-    <div class="center">
-      <img src="/images/joint.jpg" class="joint" id="joint">
-    </div>
-
-
-    <div class="bios">
-      <dl>
-        <dt>
-          <div class="title">CEO</div>
-          <img src="/images/sidney.jpg" class="head" id="sidney">
-        </dt>
-        <dd>
-          Sidney loves app design. Before Parlay she was an analyst at a <a href="https://www.novus.com">fintech startup</a>. Chinese BA, Dartmouth. After a lifetime of being right about one thing after another, Sidney started to have trouble finding friends to take the other side. There's got to be an app for that...
-          <p>#makingmorefriendswouldhavebeeneasier</p>
-          <p>
-	    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" data-icon="envelope" width="128" height="128" class="iconic" viewBox="0 0 128 128" data-src="/iconic/svg/envelope.svg">
-	      <g><title>Envelope</title></g>
-	      <g data-width="128" data-height="84" class="iconic-lg iconic-container" display="inline" transform="translate(0 22)">
-	        <g class="iconic-envelope-closed">
-	          <path d="M65.3 43.3l61.3-30.7c.7-.4 1.3-1.3 1.3-2.2v-9c0-.8-.7-1.5-1.5-1.5h-124.9c-.8.1-1.5.8-1.5 1.6v9c0 .8.6 1.8 1.3 2.2l61.3 30.7c.8.3 2 .3 2.7-.1z" class="iconic-envelope-closed-envelope-flap iconic-property-accent iconic-property-fill"></path>
-	          <path d="M62.7 51.3l-61.4-30.6c-.7-.4-1.3 0-1.3.8v61c0 .8.7 1.5 1.5 1.5h125c.8 0 1.5-.7 1.5-1.5v-61c0-.8-.6-1.2-1.3-.8l-61.4 30.6c-.7.4-1.9.4-2.6 0z" class="iconic-envelope-closed-envelope-body iconic-property-fill"></path>
-	        </g>
-	      </g>
-	    </svg>
-	    <a href="mailto:sidney@parlaywith.me">sidney@parlaywith.me</a>
-          </p>
-          <p>
-	    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" data-icon="social" width="128" height="128" class="iconic" viewBox="0 0 128 128" data-src="/iconic/svg/social.svg">
-	      <g><title>Social</title></g>
-
-	      <!-- Twitter -->
-	      <g data-width="128" data-height="104" class="iconic-lg iconic-container" display="inline" transform="translate(0 12)">
-	        <g class="iconic-social-twitter">
-	          <path d="M40.255 104c-14.83 0-28.634-4.346-40.255-11.796 2.054.242 4.145.366 6.264.366 12.303 0 23.627-4.197 32.614-11.239-11.491-.212-21.19-7.803-24.531-18.234 1.603.307 3.248.471 4.94.471 2.395 0 4.715-.321 6.919-.921-12.014-2.412-21.065-13.023-21.065-25.744 0-.111 0-.221.002-.33 3.541 1.966 7.59 3.147 11.895 3.284-7.046-4.708-11.683-12.744-11.683-21.853 0-4.811 1.295-9.322 3.555-13.199 12.952 15.884 32.302 26.337 54.128 27.432-.448-1.921-.68-3.925-.68-5.983 0-14.499 11.758-26.254 26.262-26.254 7.553 0 14.378 3.189 19.168 8.291 5.982-1.178 11.602-3.363 16.676-6.371-1.961 6.131-6.125 11.276-11.547 14.525 5.312-.635 10.373-2.046 15.083-4.134-3.521 5.265-7.973 9.889-13.104 13.591.051 1.126.076 2.258.076 3.397 0 34.695-26.414 74.701-74.717 74.701" class="iconic-property-fill"></path>
-	        </g>
-	      </g>
-	    </svg>
-	    <a href="https://twitter.com/sidneylsr">@sidneylsr</a>
-          </p>
-        </dd>
-        <dt>
-          <div class="title">
-            CTO
-          </div>
-          <img src="/images/loren.jpg" class="head" id="loren">
-        </dt>
-        <dd>
-          Loren loves code. He has made everything from a <a href="http://getferro.com">Chrome extension</a> to <a href="http://payo.us">mayonnaise</a>, has worked as a security engineer for the NSA, and is a recovering startup adviceaholic. Computer Science BA, Dartmouth. Spends his days traveling in place, typing and walking on a self-built vertical keyboard and treaddesk. 
-          <p>#hackercise</p>
-          <p>
-	    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" data-icon="envelope" width="128" height="128" class="iconic" viewBox="0 0 128 128" data-src="/iconic/svg/envelope.svg">
-	      <g><title>Envelope</title></g>
-	      <g data-width="128" data-height="84" class="iconic-lg iconic-container" display="inline" transform="translate(0 22)">
-	        <g class="iconic-envelope-closed">
-	          <path d="M65.3 43.3l61.3-30.7c.7-.4 1.3-1.3 1.3-2.2v-9c0-.8-.7-1.5-1.5-1.5h-124.9c-.8.1-1.5.8-1.5 1.6v9c0 .8.6 1.8 1.3 2.2l61.3 30.7c.8.3 2 .3 2.7-.1z" class="iconic-envelope-closed-envelope-flap iconic-property-accent iconic-property-fill"></path>
-	          <path d="M62.7 51.3l-61.4-30.6c-.7-.4-1.3 0-1.3.8v61c0 .8.7 1.5 1.5 1.5h125c.8 0 1.5-.7 1.5-1.5v-61c0-.8-.6-1.2-1.3-.8l-61.4 30.6c-.7.4-1.9.4-2.6 0z" class="iconic-envelope-closed-envelope-body iconic-property-fill"></path>
-	        </g>
-	      </g>
-	    </svg>
-	    <a href="mailto:loren@parlaywith.me">loren@parlaywith.me</a>
-          </p>
-          <p>
-	    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" data-icon="social" width="128" height="128" class="iconic" viewBox="0 0 128 128" data-src="/iconic/svg/social.svg">
-	      <g><title>Social</title></g>
-
-	      <!-- Twitter -->
-	      <g data-width="128" data-height="104" class="iconic-lg iconic-container" display="inline" transform="translate(0 12)">
-	        <g class="iconic-social-twitter">
-	          <path d="M40.255 104c-14.83 0-28.634-4.346-40.255-11.796 2.054.242 4.145.366 6.264.366 12.303 0 23.627-4.197 32.614-11.239-11.491-.212-21.19-7.803-24.531-18.234 1.603.307 3.248.471 4.94.471 2.395 0 4.715-.321 6.919-.921-12.014-2.412-21.065-13.023-21.065-25.744 0-.111 0-.221.002-.33 3.541 1.966 7.59 3.147 11.895 3.284-7.046-4.708-11.683-12.744-11.683-21.853 0-4.811 1.295-9.322 3.555-13.199 12.952 15.884 32.302 26.337 54.128 27.432-.448-1.921-.68-3.925-.68-5.983 0-14.499 11.758-26.254 26.262-26.254 7.553 0 14.378 3.189 19.168 8.291 5.982-1.178 11.602-3.363 16.676-6.371-1.961 6.131-6.125 11.276-11.547 14.525 5.312-.635 10.373-2.046 15.083-4.134-3.521 5.265-7.973 9.889-13.104 13.591.051 1.126.076 2.258.076 3.397 0 34.695-26.414 74.701-74.717 74.701" class="iconic-property-fill"></path>
-	        </g>
-	      </g>
-	    </svg>
-
-	    <a href="https://twitter.com/lorendsr">@lorendsr</a>
-          </p>
-        </dd>
-      </dl>
-      
-    </div>
-
-    <p class="clear">
-    </p>
-
-  </div>
-
 </main>
 
-<!-- <link href="/bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet" type="text/css"> -->
-<!-- <script type="text/javascript" src="/bower_components/sweetalert/dist/sweetalert.min.js" async></script> -->
-
-<nav id="bottom-nav">
-  <a href="/legal/">Legal</a>
-  <a href="/fees/">Fees</a>
-  <a href="/support/">Support</a>
-  <a href="/security/">Security</a>
-</nav>
 
 <script type="text/javascript">
-  var linkTextingDefaultCountry = "us";
-  var linkTextingPreferredCountries = ["us", "gb"];
-  var linkTextingOnlyCountries = ["af","al","dz","as","ad","ao","ai","ag","ar","am","aw","au","at","az","bs","bh","bd","bb","by","be","bz","bj","bm","bt","bo","ba","bw","br","io","vg","bn","bg","bf","bi","kh","cm","ca","cv","bq","ky","cf","td","cl","cn","co","km","cd","cg","ck","cr","ci","hr","cu","cw","cy","cz","dk","dj","dm","do","ec","eg","sv","gq","er","ee","et","fk","fo","fj","fi","fr","gf","pf","ga","gm","ge","de","gh","gi","gr","gl","gd","gp","gu","gt","gn","gw","gy","ht","hn","hk","hu","is","in","id","ir","iq","ie","il","it","jm","jp","jo","kz","ke","ki","kw","kg","la","lv","lb","ls","lr","ly","li","lt","lu","mo","mk","mg","mw","my","mv","ml","mt","mh","mq","mr","mu","mx","fm","md","mc","mn","me","ms","ma","mz","mm","na","nr","np","nl","nc","nz","ni","ne","ng","nu","nf","kp","mp","no","om","pk","pw","ps","pa","pg","py","pe","ph","pl","pt","pr","qa","re","ro","ru","rw","bl","sh","kn","lc","mf","pm","vc","ws","sm","st","sa","sn","rs","sc","sl","sg","sx","sk","si","sb","so","za","kr","ss","es","lk","sd","sr","sz","se","ch","sy","tw","tj","tz","th","tl","tg","tk","to","tt","tn","tr","tm","tc","tv","vi","ug","ua","ae","gb","us","uy","uz","vu","va","ve","vn","wf","ye","zm","zw"];
+ var linkTextingDefaultCountry = "us";
+ var linkTextingPreferredCountries = ["us", "gb"];
+ var linkTextingOnlyCountries = ["af","al","dz","as","ad","ao","ai","ag","ar","am","aw","au","at","az","bs","bh","bd","bb","by","be","bz","bj","bm","bt","bo","ba","bw","br","io","vg","bn","bg","bf","bi","kh","cm","ca","cv","bq","ky","cf","td","cl","cn","co","km","cd","cg","ck","cr","ci","hr","cu","cw","cy","cz","dk","dj","dm","do","ec","eg","sv","gq","er","ee","et","fk","fo","fj","fi","fr","gf","pf","ga","gm","ge","de","gh","gi","gr","gl","gd","gp","gu","gt","gn","gw","gy","ht","hn","hk","hu","is","in","id","ir","iq","ie","il","it","jm","jp","jo","kz","ke","ki","kw","kg","la","lv","lb","ls","lr","ly","li","lt","lu","mo","mk","mg","mw","my","mv","ml","mt","mh","mq","mr","mu","mx","fm","md","mc","mn","me","ms","ma","mz","mm","na","nr","np","nl","nc","nz","ni","ne","ng","nu","nf","kp","mp","no","om","pk","pw","ps","pa","pg","py","pe","ph","pl","pt","pr","qa","re","ro","ru","rw","bl","sh","kn","lc","mf","pm","vc","ws","sm","st","sa","sn","rs","sc","sl","sg","sx","sk","si","sb","so","za","kr","ss","es","lk","sd","sr","sz","se","ch","sy","tw","tj","tz","th","tl","tg","tk","to","tt","tn","tr","tm","tc","tv","vi","ug","ua","ae","gb","us","uy","uz","vu","va","ve","vn","wf","ye","zm","zw"];
 </script>
-<script type="text/javascript" src="//d3q6uu7asevdsg.cloudfront.net/1.3/js/link_texting.min.js"></script>
+<script type="text/javascript" src="//d3q6uu7asevdsg.cloudfront.net/1.3/js/link_texting.min.js" async></script>

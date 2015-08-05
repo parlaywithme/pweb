@@ -1,0 +1,127 @@
+.legal, .terms, .fees, .support{
+  nav {
+    background-color: rgba(255,255,255,0.8);
+  }
+
+  &:before{
+    content: "";
+    background: url('../assets/parlay-pattern-bg.png');
+    background-size: 160px;
+    opacity: .18;
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0;
+    pointer-events: none;
+    z-index: -1;
+  }
+}
+
+.legal-wrapper{
+  @include outer-container;
+  margin-top: $gutter;
+  padding: 0 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: $screen-lg-min){
+    padding: 0;
+  }
+
+}
+.legal-menu{
+
+  @include span-columns(12);    
+  list-style: none;
+  padding: 0;
+  @media (max-width: $screen-lg-max){
+    left:0 !important;
+  }
+  @media (min-width: $screen-lg-min){
+    @include span-columns(2);   
+  }
+
+    li {
+      display: inline-block;
+      padding: .5em;
+      @media (min-width: $screen-lg-min){
+        display: block;
+        padding: 1em;
+      }
+      a { 
+        color: $pistol;
+      }
+
+      &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      &.active {
+        a {
+        color: $gray;
+        cursor: inherit;
+        }
+        &:hover {
+          text-decoration: none;
+          cursor: default;
+        }
+
+      }
+
+    }
+
+  &.sticky{
+    position: fixed;
+    top: 0;
+    margin-left: 0;
+    @media(max-width: $screen-lg-max){
+      background: white;
+      width: 107%;
+      left: -16px !important;
+      top: -16px;
+      padding: .5em 0 .5em 30px;
+      right: -10px;
+      margin-right: 0;
+      box-shadow: 0 0 4.2px rgba(0,0,0,0.4);
+    }
+
+    @media (min-width: $screen-lg-min){
+      background: none;
+    }
+  }
+}
+
+#Shim {
+  visibility: hidden;
+}
+
+
+.legal-content{
+  @include span-columns(12);
+  margin-top: 1em;
+  font-size: 1em;
+  line-height: 1.1;
+  max-width: 40em;
+  @media (min-width: $screen-lg-min){
+    @include span-columns(8);
+  font-size: .8em;
+  }
+  p {
+    margin: 1.5em 0;
+  }
+
+  h3{
+    margin-top: $gutter;
+    margin-bottom: .4em;
+    color: $accent-color; 
+  }
+
+  .emoji {
+    width: 1.3em;
+  }
+
+}
+
+.legal .legal-content {
+  font-size: 1em;
+}

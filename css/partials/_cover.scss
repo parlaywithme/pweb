@@ -1,0 +1,101 @@
+// // TODO for dev—Remove
+// *{
+// border: 1px dashed pink;
+// }
+
+
+#landing-cover{
+  // @include gradient-bg;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.77) 75%, rgb(46, 204, 64) 114%);
+  min-height:740px;
+  overflow: hidden;
+  padding: 0 .8em;
+  @media (min-width: $screen-lg-min){
+    padding: 0;
+  }
+}
+
+.landing-content{
+  @include outer-container;
+  padding: 6vh 0;
+  @media (min-width: $screen-lg-min){
+    padding: 1vh 0 5vh;
+  }
+}
+
+#landing-img{
+  @include span-columns(12);
+  margin-bottom: $gutter*2;
+  text-align:center;
+
+  @media (min-width: $screen-lg-min){
+    display: block;
+    @include span-columns(6);
+    padding: 1em 2em 0;
+  }
+
+  > img {
+    width: 40vw;
+    min-width: 300px;
+    max-width: 420px;
+    
+    // @include size(280px, auto);
+    // @media (min-width: $screen-lg-min){
+    //   @include size(20vw, auto);
+    // }
+  }
+}
+
+.cover-text{
+  @include span-columns(12);
+  padding-right: 5vw;
+
+  @media (min-width: $screen-lg-min){
+    @include span-columns(5);
+    @include shift(1);
+    padding-top: 15vh;
+  }
+
+  h1{
+    color: $pistol;
+    letter-spacing: .25px;
+    font-size: 2.4em;
+    font-weight: 200;
+    line-height: 1.1;
+    margin: 0;
+    @media (min-width: $screen-lg-min){
+    font-size: 6vw;
+    }
+    @media (min-width: 1160px){
+      font-size: 3.9em;
+    }
+  }
+
+  h2{
+    font-size: 18px;
+    margin-top: 1.5em;
+    margin-bottom: .4em;
+  }
+
+  h3{
+    font-size: 18px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    // color: $white;
+    margin-top: 0;
+  }
+
+  p{
+    color: $black;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  .emoji {
+    @include size(26px,26px);
+  }
+}
+
+
+

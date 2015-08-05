@@ -1,0 +1,100 @@
+#product {
+  @include gradient-bg;
+  padding: 6em 0;
+  margin-top: 1.8em;
+}
+
+.product-demo {
+  position: relative; 
+  padding: 0 5vw;
+}
+
+.screen-images {
+  .screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $white;
+
+    > img {
+      height: 60vh;
+      width: auto !important;
+
+      @media (max-width: 660px) {
+        height: 80vh;
+      }
+    }
+  }
+}
+
+$owl-gray: darken(#D6D6D6, 20%);
+
+.owl-dots {
+  margin-top: 20px !important;
+}
+
+.owl-dot {
+  span {
+    background-color: lighten($owl-gray, 7%) !important;
+  }
+  
+  &.active,
+  &:hover {
+    span {
+      background-color: $white !important;
+    }
+  }
+}
+
+
+$nav-width: 10vw;
+
+#screen-nav {
+  position: absolute;
+  z-index: 2; /* above carousel */
+  width: 100%;
+  left: 0;
+  top: 30vh;
+
+  @media (max-width: 660px) {
+    top: 40vh;
+  }
+
+  > div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $nav-width;
+    max-width: 80px;
+    height: $nav-width * 2;
+    max-height: 160px;
+    background-color: $owl-gray;
+    color: $white;
+    font-size: 5vw;
+    font-weight: 700;
+
+    > svg {
+      width: 7vw;
+      max-width: 56px;
+    }
+  }
+
+  > #next-screen {
+    right: 0;
+    border-radius: $nav-width 0 0 $nav-width;
+ 
+    > svg {
+      margin-left: 10px;
+    }
+ }
+
+  > #prev-screen {
+    left: 0;
+    border-radius: 0 $nav-width $nav-width 0;
+ 
+    > svg {
+      margin-right: 10px;
+    }
+  }
+}

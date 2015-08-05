@@ -13,4 +13,7 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 
-# exclude: [bower_components]
+sass:
+  sass_dir: css
+
+exclude: ['bower_components']
