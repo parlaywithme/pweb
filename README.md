@@ -1,16 +1,16 @@
-Use branch gh-pages
+Branch `gh-pages` is production
 
 ## Getting started (Building/ Running)
 
+- Install rubygems
 - Install server: `gem install jekyll`
-- Install Node/ npm
+- Install Node/npm
 - Install Bower: `npm install -g bower`
 - Install Gulp `npm install -g gulp`
 - Be sure to be in the project directory
 - Install dependencies: `npm install`, `bower install`
 - Run `gulp`
-- Open [http://localhost:3000](http://localhost:3000) *Will open automatically*
-
+- [http://localhost:3000](http://localhost:3000) will open automatically
 
 ## Components
 Site components are broken out into individual folders with thier `.html`, `.scss`, & `.js` files. located in the *_includes* folder, e.g.,
