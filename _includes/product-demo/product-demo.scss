@@ -23,9 +23,15 @@
     > img {
       height: 60vh;
       width: auto !important;
+      max-height: 55vw;
 
+      @media (max-width: 1050px) {
+        max-height: 80vw;
+      }
+        
       @media (max-width: 660px) {
         height: 80vh;
+        max-height: 160vw;
       }
     }
   }

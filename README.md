@@ -13,6 +13,7 @@ Branch `gh-pages` is production
 - [http://localhost:3000](http://localhost:3000) will open automatically
 
 ## Components
+
 Site components are broken out into individual folders with thier `.html`, `.scss`, & `.js` files. located in the *_includes* folder, e.g.,
 
 ```
