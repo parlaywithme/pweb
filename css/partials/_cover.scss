@@ -38,13 +38,15 @@
     width: 40vw;
     min-width: 300px;
     max-width: 420px;
-    
+
     // @include size(280px, auto);
     // @media (min-width: $screen-lg-min){
     //   @include size(20vw, auto);
     // }
   }
 }
+
+$cover-m: 50px;
 
 .cover-text{
   @include span-columns(12);
@@ -56,12 +58,13 @@
     padding-top: 15vh;
   }
 
-  h1{
+  > h1 {
     color: $pistol;
     letter-spacing: .25px;
     font-size: 2.4em;
     font-weight: 200;
     line-height: 1.1;
+    text-align: center;
     margin: 0;
     @media (min-width: $screen-lg-min){
     font-size: 6vw;
@@ -71,31 +74,25 @@
     }
   }
 
-  h2{
-    font-size: 18px;
-    margin-top: 1.5em;
-    margin-bottom: .4em;
-  }
-
-  h3{
+  > h3 {
     font-size: 18px;
     font-weight: 200;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: .3px;
     // color: $white;
-    margin-top: 0;
+    margin: $cover-m auto;
   }
 
-  p{
+  > table {
+    font-size: 18px;
     color: $black;
     font-weight: 400;
     line-height: 1.4;
+    margin: $cover-m auto;
   }
 
   .emoji {
     @include size(26px,26px);
   }
 }
-
-
-
