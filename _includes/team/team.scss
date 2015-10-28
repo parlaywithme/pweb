@@ -10,7 +10,7 @@
     padding: 0 .8em;
   }
 }
-  
+
 #team-hero{
   @include span-columns(12);
   margin-right: 0;
@@ -54,7 +54,7 @@
 
 .bio {
   @include span-columns(12);
-  margin-top: 3em;
+  margin-top: 6em;
   @media (min-width: $screen-lg-min){
     @include span-columns(6);
   }
@@ -76,7 +76,7 @@
 
   img {
     width: 100%;
-    clip-path: inset(15% 0 15% 0);
+    clip-path: inset(6% 0 15% 0);
     margin-top: -12%;
     margin-bottom: -12%;
   }

@@ -10,7 +10,7 @@ window.sidney_alt = off
 
 animate_ideas = ->
   return unless window.location.pathname in ["/index.html", "/"]
-    
+
   ideas = $('#ideas > li')
   ul = $('#ideas')
   ideas_top = $(ideas[0]).position().top
@@ -23,7 +23,7 @@ animate_ideas = ->
     else
       next_top = $(ideas[idea_i]).position().top
       delta += next_top - ideas_top
-    ul.animate 
+    ul.animate
       scrollTop: delta
     , 1500
   , 5000
@@ -37,22 +37,8 @@ document.addEventListener "DOMContentLoaded", (event) ->
   # emojify.setConfig({"only_crawl_id": "landing"});
   # emojify.run();
 
-  window.drawer = document.querySelector 'core-drawer-panel'
-
-  if window.screen.width > 640
-    drawer?.setAttribute 'drawerWidth', '100%'
-
-  # so it doesn't run at pageload
-  setTimeout ->
-    window.addEventListener 'core-responsive-change', (e) ->
-      if e.detail.narrow
-        drawer?.setAttribute 'drawerWidth', '256px'
-      else
-        drawer?.setAttribute 'drawerWidth', '100%'
-    , 1000
-
   if window.location.pathname in ["/index.html", "/"]
-    names = ['loren','sidney','joint']
+    names = ['loren','sidney']
     for name in names
       do (name) ->
         # l 'for', name

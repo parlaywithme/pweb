@@ -143,28 +143,28 @@ $(document).ready(function() {
   });
 });
 
-//
-var alternateImage = (function(){
+// //
+// var alternateImage = (function(){
 
-  var _altImage = function(name) {
-    $('#' + name).on('mouseenter', function(e){
-      return $(e.target).attr('src', "/images/" + name + "_alt.gif");
-    }).on('mouseleave', function(e){
-      return $(e.target).attr('src', "/images/" + name + ".jpg");
-    });
-  };
+//   var _altImage = function(name) {
+//     $('#' + name).on('mouseenter', function(e){
+//       return $(e.target).attr('src', "/images/" + name + "_alt.gif");
+//     }).on('mouseleave', function(e){
+//       return $(e.target).attr('src', "/images/" + name + ".jpg");
+//     });
+//   };
 
-  return {
-    gif: _altImage
-  }
+//   return {
+//     gif: _altImage
+//   };
 
-})();
+// })();
 
 
 
-names = ['joint', 'sidney', 'loren'];
+// names = ['sidney', 'loren'];
 
-for(name in names){
-  alternateImage.gif(names[name]);
+// for(name in names){
+//   alternateImage.gif(names[name]);
 
-}
+// }
