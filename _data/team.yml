@@ -1,6 +1,7 @@
 ---
 #team member list & info
-- name: sidney
+- name: sidney sands-ramshaw
+  aside: (sister)
   position: CEO
   email: sidney
   image: sidney.jpg
@@ -8,7 +9,8 @@
   hashtag: "makingmorefriendswouldhavebeeneasier"
   bio: "Sidney loves app design. Before Parlay she was an analyst at a <a href='https://www.novus.com'>fintech startup</a>. Chinese BA, Dartmouth. After a lifetime of being right about one thing after another, Sidney started to have trouble finding friends to take the other side. There's got to be an app for that..."#team member list & info
 
-- name: loren
+- name: loren sands-ramshaw
+  aside: (brother)
   position: CTO
   email: loren
   image: loren.jpg

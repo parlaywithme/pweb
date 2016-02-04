@@ -1,24 +1,29 @@
-<div id="names">
-  <div id="first">
-    <h3>Sidney</h3>
-    <h3>Loren</h3>
-  </div>
-  <div id="together">}</div>
-  <div id="last">
-    <h3>Sands-Ramshaw</h3>
-  </div>
-</div>
+<!-- <div id="names"> -->
+<!--   <div id="first"> -->
+<!--     <h3>Sidney</h3> -->
+<!--     <h3>Loren</h3> -->
+<!--   </div> -->
+<!--   <div id="together">}</div> -->
+<!--   <div id="last"> -->
+<!--     <h3>Sands-Ramshaw</h3> -->
+<!--   </div> -->
+<!-- </div> -->
 
 <div id="team-hero" class="center">
   <img src="/images/joint.jpg" class="joint" id="joint">
 </div>
 
 {% for member in site.data.team  %}
-  
+
   <div class="bio">
     <img src="/images/{{ member.image }}" class="head" id="{{ member.name }}">
     <div class="title">{{ member.position }}</div>
-    <h2>{{ member.name }}</h2>
+    <h2>
+      {{ member.name }}
+      <!-- <span class="name-aside"> -->
+      <!--   {{ member.aside }} -->
+      <!-- </span> -->
+    </h2>
     <p>{{ member.bio }}
     </p>
     <p>#{{ member.hashtag }}</p>
@@ -35,4 +40,3 @@
   </div>
 
 {% endfor %}
-

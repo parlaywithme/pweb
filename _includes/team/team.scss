@@ -7,20 +7,26 @@
     padding: 6em 0;
   }
   @media (max-width: 660px) {
-    padding: 0 .8em;
+    padding: 56px .8em 0;
   }
 }
 
 #team-hero{
-  @include span-columns(12);
+/*  @include span-columns(12); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   margin-right: 0;
 
-  @media (min-width: $screen-lg-min){
+/*  @media (min-width: $screen-lg-min){
     @include span-columns(6);
   }
+*/
 
   img {
     width: 100%;
+    max-width: 800px;
   }
 }
 
@@ -72,6 +78,12 @@
     font-weight: 600;
     letter-spacing: .5px;
     text-transform: capitalize;
+
+    > .name-aside {
+      font-weight: normal;
+      text-transform: none;
+      color: $gray;
+    }
   }
 
   img {
