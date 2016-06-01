@@ -1,19 +1,19 @@
 ---
 #product demo screen shots
-- title: "Parlay for pics, charity or money"
+- title: "Parlay for money, bragging rights, or charity"
   image: screenshot_a
 
-- title: Build a profile 
+- title: See what friends are up to
   image: screenshot_b
 
-- title: Peruse your friend feed
+- title: React, comment, and share
   image: screenshot_c
 
-- title: Comment and emote
+- title: Build a profile
   image: screenshot_d
 
-- title: Parlay for charity
+- title: Donate to charity
   image: screenshot_e
 
-- title: Parlay for pics
-  image: screenshot_f  
+# - title: Parlay for pics
+#   image: screenshot_f  
